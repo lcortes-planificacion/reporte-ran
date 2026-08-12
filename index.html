@@ -1009,7 +1009,7 @@
 <!-- Configuración de la nube -->
 <div class="modal" id="modalNube">
   <div class="caja">
-    <h4>Guardado en la nube (Supabase)</h4>
+    <h4>Guardado en la nube (Supabase) <span id="verTag" style="font-size:10px;font-weight:400;color:#5F7381"></span></h4>
     <p class="sub">Con esto los datos dejan de vivir en el archivo y pasan a vivir en una tabla: el reporte se puede
       abrir desde cualquier computador o desde el celular y siempre trae la última versión guardada.
       La clave es la pública (anon), la misma que ya usa su aplicación de planificación.</p>
@@ -1020,7 +1020,7 @@
       <input type="text" id="cfgKey" placeholder="sb_publishable_…">
       <div style="display:flex;gap:8px;flex-wrap:wrap">
         <div style="flex:1 1 150px"><label class="lbl" style="margin:0">Tabla</label>
-          <input type="text" id="cfgTabla" placeholder="pie_data" style="width:100%"></div>
+          <input type="text" id="cfgTabla" placeholder="main" style="width:100%"></div>
         <div style="flex:1 1 150px"><label class="lbl" style="margin:0">Columna de datos</label>
           <input type="text" id="cfgCol" placeholder="data" style="width:100%"></div>
         <div style="flex:1 1 150px"><label class="lbl" style="margin:0">Fila (id)</label>
@@ -1076,15 +1076,17 @@
   var LSKEY = "reporteRAN.v5";
   var LSPDF = "reporteRAN.pdfAviso";
   var LSNUBE = "reporteRAN.copiaNube";
+  var LSCFG  = "reporteRAN.nubeCfg";
+  var VERSION = "v2 · tabla reporte_ran";
   var FILTRO = { q:"", cliente:"", fase:"", aporte:false, ito:false };
 
   var RESPONSABLES = ["Ventas Externas","Taller de producción"];
   var NUBE_DEF = {
     url:    "https://wlxhephhhlhufgwfmwfm.supabase.co",
     key:    "sb_publishable_WOTPiecKx5ai4F6feLbexQ_doYTScvd",
-    tabla:  "pie_data",
+    tabla:  "reporte_ran",
     columna:"data",
-    fila:   "reporte_ran",
+    fila:   "main",
     auto:   true
   };
   var ITO_TXT = "Cliente exige presencia de ITO en las etapas de revisión durante el proceso.";
@@ -1806,6 +1808,13 @@
     R.nube = { url:n.url!==undefined?n.url:NUBE_DEF.url, key:n.key!==undefined?n.key:NUBE_DEF.key,
                tabla:n.tabla||NUBE_DEF.tabla, columna:n.columna||NUBE_DEF.columna,
                fila:n.fila||NUBE_DEF.fila, auto:n.auto!==false };
+    /* si en este equipo se ajustó la conexión a mano, esa manda */
+    try{
+      var loc = JSON.parse(localStorage.getItem(LSCFG)||"null");
+      if(loc && loc.tabla) R.nube = { url:loc.url||R.nube.url, key:loc.key||R.nube.key,
+        tabla:loc.tabla, columna:loc.columna||R.nube.columna, fila:loc.fila||R.nube.fila,
+        auto:loc.auto!==false };
+    }catch(e){}
     (R.clientes||[]).forEach(function(c){
       c.ito = !!c.ito;
       if(typeof c.itoNota!=="string") c.itoNota = "";
@@ -2254,6 +2263,7 @@
 
   /* ---- configuración ---- */
   function abrirCfg(){
+    document.getElementById("verTag").textContent = "· archivo " + VERSION;
     document.getElementById("cfgUrl").value   = R.nube.url||"";
     document.getElementById("cfgKey").value   = R.nube.key||"";
     document.getElementById("cfgTabla").value = R.nube.tabla||"";
@@ -2266,9 +2276,9 @@
   function tomarCfg(){
     R.nube.url     = document.getElementById("cfgUrl").value.trim();
     R.nube.key     = document.getElementById("cfgKey").value.trim();
-    R.nube.tabla   = document.getElementById("cfgTabla").value.trim() || "pie_data";
+    R.nube.tabla   = document.getElementById("cfgTabla").value.trim() || "reporte_ran";
     R.nube.columna = document.getElementById("cfgCol").value.trim() || "data";
-    R.nube.fila    = document.getElementById("cfgFila").value.trim() || "reporte_ran";
+    R.nube.fila    = document.getElementById("cfgFila").value.trim() || "main";
     R.nube.auto    = document.getElementById("cfgAuto").checked;
   }
   document.getElementById("btnNubeCfg").addEventListener("click", abrirCfg);
@@ -2276,8 +2286,9 @@
     document.getElementById("modalNube").classList.remove("show"); });
   document.getElementById("cfgGuardar").addEventListener("click", function(){
     snap(); tomarCfg(); cambio();
-    document.getElementById("cfgMsg").innerHTML = '<span class="ok">Configuración guardada. '
-      + 'Recuerda descargar el archivo con 💾 para conservarla.</span>';
+    try{ localStorage.setItem(LSCFG, JSON.stringify(R.nube)); }catch(e){}
+    document.getElementById("cfgMsg").innerHTML = '<span class="ok">Configuración guardada en este equipo.</span> '
+      + 'Ya no se pierde al recargar. Para que quede fija en todos los equipos, el archivo publicado debe traerla.';
   });
   document.getElementById("cfgProbar").addEventListener("click", function(){
     tomarCfg();
