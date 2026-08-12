@@ -1,0 +1,17 @@
+{
+  "name": "Reporte Estado de RAN · Sumitomo Antofagasta",
+  "short_name": "Reporte RAN",
+  "description": "Estado de las órdenes de reparación de reductores por cliente, sección y etapa.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#E4E9EC",
+  "theme_color": "#0E3A4E",
+  "lang": "es-CL",
+  "icons": [
+    { "src": "ran-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "ran-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "ran-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

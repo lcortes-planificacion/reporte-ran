@@ -1,0 +1,2463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sumitomo Antofagasta · Reporte Estado de RAN</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0E3A4E">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Reporte RAN">
+<link rel="apple-touch-icon" href="ran-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="ran-192.png">
+
+<!-- ============================================================
+     DATOS DEL REPORTE · se reescriben solos al "Guardar archivo"
+     ============================================================ -->
+<script id="datos" type="application/json">
+{
+  "empresa": "Sumitomo Antofagasta",
+  "titulo": "Reporte Estado de RAN",
+  "periodo": "Mes de Agosto",
+  "area": "Planificación y Control de Producción",
+  "fechaCorte": "11-08-2026",
+  "firma": {
+    "nombre": "Luis Cortés",
+    "cargo": "Planificación y Control de Producción"
+  },
+  "estados": [],
+  "clientes": [
+    {
+      "cliente": "MINERA SPENCE S.A.",
+      "ito": false,
+      "itoNota": "",
+      "ordenes": [
+        {
+          "orden": "ANT6A000-001",
+          "ran": "1825",
+          "modelo": "PHD9075P11-RL-3.947",
+          "ns": "Sin base de traslado",
+          "fecha": "FINALIZADO",
+          "flag": "",
+          "fase": "ensamble",
+          "tipo": "finalizado",
+          "estado": "Equipo listo despacho",
+          "detalle": "Equipo embalado.",
+          "aporte": "",
+          "responsable": "Ventas Externas",
+          "obs": "A la espera de retiro por parte de cliente.",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        },
+        {
+          "orden": "ANT7A007-001",
+          "ran": "1855",
+          "modelo": "QHRL4-CRN-100(DP)",
+          "ns": "",
+          "fecha": "FINALIZADO",
+          "flag": "EMERGENCIA",
+          "fase": "ensamble",
+          "tipo": "finalizado",
+          "estado": "Equipo listo despacho",
+          "detalle": "Equipo embalado a la espera de retiro por parte de cliente.",
+          "aporte": "",
+          "responsable": "Ventas Externas",
+          "obs": "A la espera de retiro por parte de cliente.\nAgendamiento realizado para el día 01 de septiembre.",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        },
+        {
+          "orden": "ANT6A001-001",
+          "ran": "1792",
+          "modelo": "QHRC3-CRK-22.4 (DP)",
+          "ns": "ORI016082",
+          "fecha": "FINALIZADO",
+          "flag": "",
+          "fase": "ensamble",
+          "tipo": "finalizado",
+          "estado": "Equipo listo despacho",
+          "detalle": "Equipo embalado a la espera de retiro por parte de cliente.",
+          "aporte": "",
+          "responsable": "Ventas Externas",
+          "obs": "A la espera de retiro por parte de cliente.",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        }
+      ]
+    },
+    {
+      "cliente": "CÍA. MINERA DEL PACÍFICO S.A.",
+      "ito": false,
+      "itoNota": "",
+      "ordenes": [
+        {
+          "orden": "ANT1A006-001",
+          "ran": "1618",
+          "modelo": "QHPL3-TRN-28-(DP)",
+          "ns": "NS ORI007068",
+          "fecha": "FINALIZADO",
+          "flag": "",
+          "fase": "ensamble",
+          "tipo": "finalizado",
+          "estado": "Equipo listo despacho",
+          "detalle": "Equipo embalado a la espera de retiro por parte de cliente.",
+          "aporte": "",
+          "responsable": "Ventas Externas",
+          "obs": "A la espera de retiro por parte de cliente.",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        },
+        {
+          "orden": "ANT7A004-001",
+          "ran": "1873",
+          "modelo": "PHD9110R3-RRF-20",
+          "ns": "",
+          "fecha": "31-08-2026",
+          "flag": "",
+          "fase": "desarme",
+          "tipo": "proceso",
+          "estado": "En desarme",
+          "detalle": "Equipo en desarme para cambio de rodamientos y posterior ensamble, pruebas dinámicas, embalaje y despacho.",
+          "aporte": "",
+          "responsable": "Taller de producción",
+          "obs": "Se inyectaron recursos para realizar la entrega lo antes posible.\nSe encuentra a la espera de confirmación por la adquisición de todos los **rodamientos**.",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        }
+      ]
+    },
+    {
+      "cliente": "COMPAÑÍA MINERA ZALDÍVAR SPA",
+      "ito": true,
+      "itoNota": "",
+      "ordenes": [
+        {
+          "orden": "ANT6A027-001",
+          "ran": "1794",
+          "modelo": "HANSEN QHRB2-CRN-9 (DP)",
+          "ns": "ORI012100",
+          "fecha": "14-08-2026",
+          "flag": "",
+          "fase": "ensamble",
+          "tipo": "proceso",
+          "estado": "En ensamble inicial",
+          "detalle": "En proceso de ensamble.",
+          "aporte": "",
+          "responsable": "Taller de producción",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        },
+        {
+          "orden": "ANT1A026-001",
+          "ran": "1723",
+          "modelo": "FALK M1200DH02-AS-23-LD0125",
+          "ns": "",
+          "fecha": "31-08-2026",
+          "flag": "",
+          "fase": "ensamble",
+          "tipo": "cliente",
+          "estado": "Equipo ensamblado, en espera de aportes de cliente",
+          "detalle": "",
+          "aporte": "**Acoplamiento HSS**",
+          "responsable": "Ventas Externas",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        },
+        {
+          "orden": "ANSYA013-001",
+          "ran": "1550",
+          "modelo": "M1210 DHC2AN",
+          "ns": "NS 07-068359-01",
+          "fecha": "14-08-2026",
+          "flag": "",
+          "fase": "ensamble",
+          "tipo": "ito",
+          "estado": "En espera visita de ITO revisión de pruebas dinámicas",
+          "detalle": "En pruebas dinámicas en banco con ITO.",
+          "aporte": "**Acoplamiento hidráulico**",
+          "responsable": "Ventas Externas",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        },
+        {
+          "orden": "ANT6A019-001",
+          "ran": "1744",
+          "modelo": "QHRJ3-CRN-25",
+          "ns": "NS 037R05A 31450",
+          "fecha": "21-08-2026",
+          "flag": "",
+          "fase": "ensamble",
+          "tipo": "proceso",
+          "estado": "En programación",
+          "detalle": "",
+          "aporte": "**Motor eléctrico**",
+          "responsable": "Ventas Externas",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        }
+      ]
+    },
+    {
+      "cliente": "MINERA GABRIELA MISTRAL",
+      "ito": false,
+      "itoNota": "",
+      "ordenes": [
+        {
+          "orden": "ANS7A018-001",
+          "ran": "1325",
+          "modelo": "ZOLLERN SLEWING GEAR",
+          "ns": "ZHP3_27",
+          "fecha": "28-08-2026",
+          "flag": "",
+          "fase": "ensamble",
+          "tipo": "cliente",
+          "estado": "Equipo ensamblado, en espera de aportes de cliente",
+          "detalle": "Equipo ensamblado a la espera de aportes de cliente para pruebas dinámicas.",
+          "aporte": "**Motor**\n**Acople estriado**",
+          "responsable": "Ventas Externas",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        },
+        {
+          "orden": "ANT6A024-001",
+          "ran": "1829",
+          "modelo": "T3 SH 11 F",
+          "ns": "NS 4565745-0011-001",
+          "fecha": "26-08-2026",
+          "flag": "",
+          "fase": "ensamble",
+          "tipo": "proceso",
+          "estado": "En programación",
+          "detalle": "",
+          "aporte": "",
+          "responsable": "Taller de producción",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        }
+      ]
+    },
+    {
+      "cliente": "MINERA RADOMIRO TOMIC",
+      "ito": false,
+      "itoNota": "",
+      "ordenes": [
+        {
+          "orden": "ANSYA011-001",
+          "ran": "1561",
+          "modelo": "H2 SH 11 B",
+          "ns": "NS K 480 005 335-004-001",
+          "fecha": "URGENCIA",
+          "flag": "URGENTE",
+          "fase": "ensamble",
+          "tipo": "proceso",
+          "estado": "En ensamble inicial",
+          "detalle": "En proceso de ensamble.",
+          "aporte": "**Acoplamiento HSS**",
+          "responsable": "Ventas Externas",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        },
+        {
+          "orden": "ANS9A010-001",
+          "ran": "1651",
+          "modelo": "FLENDER B3SE 19",
+          "ns": "",
+          "fecha": "28-08-2026",
+          "flag": "",
+          "fase": "ensamble",
+          "tipo": "proceso",
+          "estado": "En programación",
+          "detalle": "",
+          "aporte": "**Acoplamiento HSS**\n**Disco**",
+          "responsable": "Ventas Externas",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        }
+      ]
+    },
+    {
+      "cliente": "MINERA ANTUCOYA",
+      "ito": false,
+      "itoNota": "",
+      "ordenes": [
+        {
+          "orden": "ANT6A025-001",
+          "ran": "1860",
+          "modelo": "HANSEN QHRE2-CLN-11.2(DP)",
+          "ns": "",
+          "fecha": "17-08-2026",
+          "flag": "",
+          "fase": "desarme",
+          "tipo": "cliente",
+          "estado": "Equipo sin orden de compra",
+          "detalle": "Equipo a preservación y pruebas.",
+          "aporte": "**Orden de compra**",
+          "responsable": "Ventas Externas",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        },
+        {
+          "orden": "ANT6A004-001",
+          "ran": "1830",
+          "modelo": "PHD9080P3-LRF-25",
+          "ns": "",
+          "fecha": "21-08-2026",
+          "flag": "",
+          "fase": "ensamble",
+          "tipo": "proceso",
+          "estado": "En ensamble inicial",
+          "detalle": "En proceso de ensamble.",
+          "aporte": "**Acoplamiento HSS**",
+          "responsable": "Ventas Externas",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        },
+        {
+          "orden": "ANT6A007-001",
+          "ran": "1845",
+          "modelo": "QHRL2-CRN-14(DP)",
+          "ns": "NS ORI011327",
+          "fecha": "28-08-2026",
+          "flag": "",
+          "fase": "ensamble",
+          "tipo": "proceso",
+          "estado": "En programación",
+          "detalle": "",
+          "aporte": "**Acoplamiento HSS + disco de freno + elastómeros**\n**Acople LSS + camisa LSS**",
+          "responsable": "Ventas Externas",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        },
+        {
+          "orden": "ANT6A006-001",
+          "ran": "1837",
+          "modelo": "QHRL2-CLN-14(DP)",
+          "ns": "NS ORI009012",
+          "fecha": "21-08-2026",
+          "flag": "",
+          "fase": "ensamble",
+          "tipo": "proceso",
+          "estado": "En programación",
+          "detalle": "",
+          "aporte": "**Acoplamiento HSS + disco de freno + elastómeros**",
+          "responsable": "Ventas Externas",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        }
+      ]
+    },
+    {
+      "cliente": "MINERA CENTINELA",
+      "ito": false,
+      "itoNota": "",
+      "ordenes": [
+        {
+          "orden": "ANT3A027-001",
+          "ran": "1780",
+          "modelo": "REGGIANA RR15000 L4 FS 384",
+          "ns": "",
+          "fecha": "28-08-2026",
+          "flag": "",
+          "fase": "desarme",
+          "tipo": "cliente",
+          "estado": "En espera de confirmación",
+          "detalle": "Orden en costo cero.",
+          "aporte": "**Confirmación de la orden en costo cero**",
+          "responsable": "Ventas Externas",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        },
+        {
+          "orden": "ANT3A028-001",
+          "ran": "1795",
+          "modelo": "REGGIANA REDUTTORI",
+          "ns": "",
+          "fecha": "28-08-2026",
+          "flag": "",
+          "fase": "desarme",
+          "tipo": "cliente",
+          "estado": "En espera de confirmación",
+          "detalle": "Orden en costo cero.",
+          "aporte": "**Confirmación de la orden en costo cero**",
+          "responsable": "Ventas Externas",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        }
+      ]
+    },
+    {
+      "cliente": "KOSPO POWER SERVICE LTDA.",
+      "ito": false,
+      "itoNota": "",
+      "ordenes": [
+        {
+          "orden": "ANT3A018-001",
+          "ran": "1797",
+          "modelo": "SFC065R2GS-RRF-12.5",
+          "ns": "",
+          "fecha": "10-08-2026",
+          "flag": "",
+          "fase": "ensamble",
+          "tipo": "finalizado",
+          "estado": "Despachado",
+          "detalle": "",
+          "aporte": "",
+          "responsable": "Taller de producción",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        },
+        {
+          "orden": "ANT3A015-001",
+          "ran": "1798",
+          "modelo": "SFC065R2GS-RRF-12.5",
+          "ns": "",
+          "fecha": "19-08-2026",
+          "flag": "",
+          "fase": "desarme",
+          "tipo": "proceso",
+          "estado": "En desarme",
+          "detalle": "Ingresa a proceso de desarme y evaluación.",
+          "aporte": "",
+          "responsable": "Taller de producción",
+          "obs": "",
+          "fechaOriginal": "",
+          "fechaIngreso": "",
+          "fechaAporte": "",
+          "itoEstado": "",
+          "itoFecha": ""
+        }
+      ]
+    }
+  ],
+  "catalogoClientes": [],
+  "coloresEstado": {},
+  "resumen": true,
+  "etapasEstado": {},
+  "familias": []
+}
+</script>
+
+<style>
+  :root{
+    --petrol:#0E3A4E; --petrol-mid:#2C6C8C;
+    --ice:#E9F2F6; --ice-line:#CBDDE6;
+    --bronze:#6B3F1D; --bronze-mid:#96602F;
+    --sand:#F7EEE3; --sand-line:#E3D2BC;
+    --amber:#B36A12; --amber-soft:#FBF1E1;
+    --green:#2C6650; --green-soft:#E7F1EC;
+    --violet:#5B4B8A; --violet-soft:#EFEBF7;
+    --red:#9E2B25;
+    --ink:#16242C; --muted:#5F7381;
+    --paper:#FDFDFB; --rule:#D8E1E6;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  body{margin:0;background:#E4E9EC;color:var(--ink);
+    font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;font-size:12px;line-height:1.45;
+    padding-top:52px;}
+
+  /* ---------------- Barra superior ---------------- */
+  .bar{position:fixed;top:0;left:0;right:0;height:52px;background:var(--petrol);
+    display:flex;align-items:center;gap:8px;padding:0 14px;z-index:60;
+    box-shadow:0 2px 10px rgba(0,0,0,.25);}
+  .bar .brand{color:#9FC4D6;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+    font-weight:700;margin-right:auto;white-space:nowrap;}
+  .bar button{border:none;padding:9px 13px;font-size:11px;font-weight:700;letter-spacing:.05em;
+    text-transform:uppercase;cursor:pointer;font-family:inherit;background:#EAF2F6;color:var(--petrol);}
+  .bar button:hover{background:#fff;}
+  .bar button.on{background:var(--amber);color:#fff;}
+  .bar button.nube{background:#1E5F80;color:#fff;}
+  .bar button.nube:hover{background:#2C7CA6;}
+  #btnNubeCfg{padding:9px 10px;}
+  .bar button.save{background:var(--green);color:#fff;}
+  .bar button.save:hover{background:#3A8467;}
+  .bar button:disabled{opacity:.4;cursor:default;}
+  .bar button:focus-visible{outline:3px solid #FFD37E;outline-offset:2px;}
+  #btnUndo,#btnEstados,#btnClientes,#btnFamilias{display:none;}
+  body.edit #btnUndo,body.edit #btnEstados,body.edit #btnClientes,
+  body.edit #btnFamilias{display:inline-block;}
+  .bar .guardado{color:#9FC4D6;font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+    font-weight:700;white-space:nowrap;}
+
+  /* ---------------- Avisos ---------------- */
+  .aviso{max-width:1180px;margin:14px auto -4px;background:#EAF6EF;border:1px solid #A9CDBB;
+    border-left:5px solid var(--green);padding:10px 14px;font-size:11.5px;color:#1F4E3C;
+    display:none;align-items:center;gap:10px;flex-wrap:wrap;}
+  .aviso.show{display:flex;}
+  .aviso button{border:1px solid #7FB39A;background:#fff;font-size:10px;font-weight:700;
+    text-transform:uppercase;letter-spacing:.06em;padding:5px 10px;cursor:pointer;font-family:inherit;
+    color:var(--green);}
+
+  .hint{max-width:1180px;margin:16px auto -8px;background:#FFF6E3;border:1px solid #E5C793;
+    border-left:5px solid var(--amber);padding:11px 14px;font-size:11.5px;color:#6B4A12;line-height:1.65;
+    display:none;}
+  body.edit .hint{display:block;}
+  .hint b{color:#4E360C;}
+  .hint .cerrar{float:right;border:1px solid #E5C793;background:#fff;font-size:9px;font-weight:700;
+    text-transform:uppercase;letter-spacing:.06em;padding:3px 8px;cursor:pointer;color:#8A6316;font-family:inherit;}
+  .hint.oculto{display:none !important;}
+
+  /* ---------------- Filtros ---------------- */
+  .filtros{max-width:1180px;margin:16px auto -6px;background:#fff;border:1px solid var(--ice-line);
+    padding:10px 12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  .filtros label{font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);}
+  .filtros input[type=text],.filtros select{font-family:inherit;font-size:11.5px;padding:6px 8px;
+    border:1px solid var(--ice-line);background:#fff;color:var(--ink);min-width:150px;}
+  .filtros input[type=text]{min-width:210px;}
+  .filtros .tog{border:1px solid var(--ice-line);background:#fff;font-size:10px;font-weight:700;
+    letter-spacing:.05em;text-transform:uppercase;padding:6px 10px;cursor:pointer;font-family:inherit;
+    color:var(--petrol-mid);}
+  .filtros .tog.on{background:var(--amber);border-color:var(--amber);color:#fff;}
+  .filtros .limpiar{margin-left:auto;border:none;background:none;color:var(--petrol-mid);
+    font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;
+    font-family:inherit;text-decoration:underline;}
+
+  /* ---------------- Hoja ---------------- */
+  .sheet{max-width:1180px;margin:20px auto;background:var(--paper);padding:34px 38px 30px;
+    box-shadow:0 2px 18px rgba(14,58,78,.18);}
+  .head{border-bottom:3px solid var(--petrol);padding-bottom:16px;display:flex;
+    justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;}
+  .head-title{flex:1 1 60%;min-width:0;}
+  .eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--petrol-mid);
+    font-weight:700;margin-bottom:6px;}
+  h1{font-size:24px;line-height:1.1;margin:0;font-weight:700;letter-spacing:-.01em;color:var(--petrol);}
+  .head-month{font-size:15px;font-weight:600;color:var(--petrol-mid);margin-top:2px;}
+  .head-sub{font-size:12px;color:var(--muted);margin-top:6px;}
+  .head-meta{text-align:right;font-size:11px;color:var(--muted);line-height:1.7;white-space:nowrap;}
+  .head-meta b{color:var(--ink);font-variant-numeric:tabular-nums;}
+  .head-meta .f{display:inline-block;width:104px;vertical-align:middle;text-align:right;
+    padding:3px 6px;font-size:11px;}
+  .head-title .f{max-width:100%;}
+  .head{max-width:100%;}
+
+  .kpis{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;}
+  .kpi{flex:1 1 0;min-width:120px;border:1px solid var(--ice-line);background:#fff;padding:8px 11px;
+    border-top:3px solid var(--petrol-mid);}
+  .kpi .n{font-size:19px;font-weight:700;color:var(--petrol);line-height:1.1;font-variant-numeric:tabular-nums;}
+  .kpi .t{font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:2px;}
+  .kpi.k-des{border-top-color:var(--bronze-mid);} .kpi.k-des .n{color:var(--bronze);}
+  .kpi.k-cliente{border-top-color:var(--amber);} .kpi.k-cliente .n{color:var(--amber);}
+  .kpi.k-ito{border-top-color:var(--violet);}    .kpi.k-ito .n{color:var(--violet);}
+  .kpi.k-fin{border-top-color:var(--green);}     .kpi.k-fin .n{color:var(--green);}
+
+  .filtroaviso{margin-top:14px;background:var(--amber-soft);border:1px solid #E5C793;
+    border-left:4px solid var(--amber);padding:7px 11px;font-size:10.5px;color:#6B4A12;font-weight:600;display:none;}
+  .filtroaviso.show{display:block;}
+
+  /* ---------------- Secciones (fases) ---------------- */
+  .fase{margin-top:26px;padding:0 0 10px;border:2px solid var(--petrol);border-top:none;}
+  .fase-banner{display:flex;align-items:center;gap:12px;background:var(--petrol);color:#fff;
+    padding:9px 14px;}
+  .fase-banner .ico{font-size:15px;line-height:1;}
+  .fase-banner h2{margin:0;font-size:14px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;}
+  .fase-banner .n{margin-left:auto;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:700;background:rgba(255,255,255,.16);padding:3px 9px;}
+  .fase-cuerpo{padding:0 12px;}
+  .fase-desarme{border-color:var(--bronze);}
+  .fase-desarme .fase-banner{background:var(--bronze);}
+  .fase-desarme .client-head{background:var(--bronze-mid);}
+  .fase-desarme thead th{background:var(--sand);border-bottom-color:var(--sand-line);color:var(--bronze);}
+  .fase-desarme .client-head .count{color:#F3E2CE;}
+  .fase-vacia{font-size:11px;color:var(--muted);font-style:italic;padding:12px 4px;}
+
+  /* ---------------- Cliente ---------------- */
+  .client{margin-top:12px;break-inside:avoid;page-break-inside:avoid;}
+  .client-head{display:flex;align-items:center;gap:10px;background:var(--petrol-mid);color:#fff;
+    padding:6px 12px;flex-wrap:wrap;}
+  .client-head h3{margin:0;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;}
+  .client-head .count{margin-left:auto;font-size:10px;letter-spacing:.1em;color:#D6E8F1;
+    text-transform:uppercase;font-weight:700;}
+  .ito-tag{background:#EFEBF7;color:#41356B;font-size:9px;font-weight:700;letter-spacing:.09em;
+    text-transform:uppercase;padding:2px 7px;border:1px solid #B9AEDA;white-space:nowrap;}
+  .ito-nota{background:var(--violet-soft);border:1px solid #C9C0E4;border-left:4px solid var(--violet);
+    padding:5px 10px;font-size:10.5px;color:#41356B;}
+
+  table{width:100%;border-collapse:collapse;table-layout:fixed;}
+  col.c-orden{width:10.5%;} col.c-ran{width:5.5%;} col.c-modelo{width:15%;}
+  col.c-fecha{width:8.5%;} col.c-estado{width:18.5%;} col.c-aporte{width:18%;}
+  col.c-obs{width:18%;} col.c-tools{width:0;}
+  body.edit col.c-orden{width:9%;} body.edit col.c-ran{width:5%;} body.edit col.c-modelo{width:14%;}
+  body.edit col.c-fecha{width:12%;} body.edit col.c-estado{width:17%;} body.edit col.c-aporte{width:16%;}
+  body.edit col.c-obs{width:14%;} body.edit col.c-tools{width:11%;}
+
+  thead th{background:var(--ice);border-bottom:1px solid var(--ice-line);font-size:9px;font-weight:700;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--petrol);text-align:left;
+    padding:5px 6px;vertical-align:bottom;}
+  tbody td{border-bottom:1px solid var(--rule);padding:6px 6px;vertical-align:top;font-size:11.5px;}
+  tbody tr:nth-child(even) td{background:#F6F9FA;}
+  tr.t-proceso    td:first-child{box-shadow:inset 4px 0 0 var(--petrol-mid);}
+  tr.t-cliente    td:first-child{box-shadow:inset 4px 0 0 var(--amber);}
+  tr.t-ito        td:first-child{box-shadow:inset 4px 0 0 var(--violet);}
+  tr.t-finalizado td:first-child{box-shadow:inset 4px 0 0 var(--green);}
+
+  .orden{font-weight:700;font-size:11px;letter-spacing:.02em;white-space:nowrap;}
+  .ran{font-weight:700;color:var(--petrol-mid);font-variant-numeric:tabular-nums;}
+  .fase-desarme .ran{color:var(--bronze-mid);}
+  .modelo{line-height:1.35;}
+  .ns{display:block;font-size:10px;color:var(--muted);}
+  .flag{display:inline-block;background:var(--red);color:#fff;font-size:8.5px;font-weight:700;
+    letter-spacing:.08em;text-transform:uppercase;padding:1px 5px;margin-top:2px;}
+  .fecha{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;}
+
+  .badge{display:inline-block;font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+    padding:2px 6px;border:1px solid;line-height:1.3;}
+  .badge.t-proceso{background:var(--ice);border-color:#A8C6D6;color:var(--petrol);}
+  .fase-desarme .badge.t-proceso{background:var(--sand);border-color:#DCC4A5;color:var(--bronze);}
+  .badge.t-cliente{background:var(--amber-soft);border-color:#E0BE86;color:var(--amber);}
+  .badge.t-ito{background:var(--violet-soft);border-color:#BFB4E0;color:var(--violet);}
+  .badge.t-finalizado{background:var(--green-soft);border-color:#A6C7B6;color:var(--green);}
+  .estado-txt{display:block;font-size:10.5px;color:#3C4F59;margin-top:3px;line-height:1.4;}
+
+  .aporte-item{display:block;font-size:11px;line-height:1.4;}
+  .aporte-item+.aporte-item{margin-top:2px;}
+  .resp{display:inline-block;margin-top:4px;font-size:9px;font-weight:700;letter-spacing:.05em;
+    text-transform:uppercase;padding:1px 6px;border:1px solid;}
+  .resp.r-ventas{background:var(--amber-soft);border-color:#E0BE86;color:var(--amber);}
+  .resp.r-taller{background:var(--ice);border-color:#A8C6D6;color:var(--petrol);}
+  .obs{font-size:10.5px;color:#33454F;}
+  .meta{display:block;font-size:9.5px;color:var(--muted);line-height:1.35;margin-top:2px;font-weight:400;}
+  .meta.alerta{color:var(--red);font-weight:700;}
+  .meta.ok{color:var(--green);}
+  .ito-chip{display:inline-block;margin-top:3px;font-size:8.8px;font-weight:700;letter-spacing:.04em;
+    text-transform:uppercase;padding:1px 5px;border:1px solid #BFB4E0;background:var(--violet-soft);color:var(--violet);}
+  .ito-chip.pend{border-color:#E0BE86;background:var(--amber-soft);color:var(--amber);}
+  .ito-chip.hecha{border-color:#A6C7B6;background:var(--green-soft);color:var(--green);}
+  .none{color:#9DAEB8;}
+
+  /* ---------------- Edición ---------------- */
+  .f{width:100%;font-family:inherit;font-size:11.5px;color:var(--ink);background:#fff;
+    border:1px solid #BCCFD9;padding:5px 6px;}
+  .f:focus{outline:none;border-color:var(--petrol-mid);box-shadow:0 0 0 3px rgba(44,108,140,.18);background:#FFFDF5;}
+  .f.mono{font-variant-numeric:tabular-nums;}
+  .f.sm{font-size:10.5px;}
+  textarea.f{resize:vertical;line-height:1.4;}
+  .lbl{display:block;font-size:8.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);
+    font-weight:700;margin:6px 0 2px;}
+  .lbl:first-child{margin-top:0;}
+  .fila-fecha{display:flex;gap:3px;}
+  .fila-fecha .dpick{width:26px;border:1px solid #BCCFD9;background:#fff;padding:0;cursor:pointer;}
+  .cli{font-family:inherit;font-size:12.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+    background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);color:#fff;padding:3px 7px;min-width:260px;}
+  .cli::placeholder{color:#CFE3EE;}
+  .itobtn{border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.12);color:#fff;font-size:9px;
+    font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;cursor:pointer;font-family:inherit;}
+  .itobtn.on{background:#EFEBF7;color:#41356B;border-color:#EFEBF7;}
+
+  td.tools,th.tools{display:none;}
+  body.edit td.tools,body.edit th.tools{display:table-cell;}
+  .mini{border:1px solid #BCCFD9;background:#fff;font-size:9.5px;font-weight:700;padding:4px 6px;
+    cursor:pointer;font-family:inherit;color:var(--petrol-mid);}
+  .mini.del{color:var(--red);border-color:#E0B3B0;width:100%;margin-top:4px;text-transform:uppercase;
+    letter-spacing:.05em;font-size:8.5px;}
+  .mover{display:flex;gap:3px;}
+  .mover .mini{flex:1;text-align:center;}
+  .auto{display:block;font-size:8.5px;color:var(--muted);margin-top:5px;line-height:1.35;}
+
+  .rowadd{display:none;gap:8px;align-items:center;padding:8px 2px 0;flex-wrap:wrap;}
+  body.edit .rowadd{display:flex;}
+  .addbtn{border:1px dashed var(--petrol-mid);background:#fff;color:var(--petrol-mid);font-size:10px;
+    font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:7px 13px;cursor:pointer;font-family:inherit;}
+  .addbtn:hover{background:var(--ice);}
+  .cuenta{font-size:10px;color:var(--muted);margin-left:auto;text-transform:uppercase;letter-spacing:.06em;}
+
+  .closing{margin-top:26px;border-top:2px solid var(--petrol);padding-top:12px;}
+  .sign b{display:block;font-size:12px;color:var(--ink);}
+  .sign span,.sign input{display:block;font-size:11px;color:var(--muted);}
+  .leyenda{margin-top:10px;font-size:9.5px;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap;}
+  .leyenda i{display:inline-block;width:9px;height:9px;margin-right:4px;vertical-align:-1px;}
+
+  /* ---------------- Modales ---------------- */
+  .modal{position:fixed;inset:0;background:rgba(14,58,78,.45);z-index:70;display:none;
+    align-items:flex-start;justify-content:center;padding:70px 16px 20px;overflow:auto;}
+  .modal.show{display:flex;}
+  #modalEstados .caja,#modalFamilias .caja{max-width:860px;}
+  #modalNube .nuevo{flex-direction:column;align-items:stretch;gap:8px;}
+  #modalNube input[type=text]{flex:0 0 auto;width:100%;font-family:inherit;font-size:11.5px;
+    padding:7px 8px;border:1px solid #BCCFD9;min-width:0;}
+  #modalNube .lbl{margin:0 0 2px;}
+  #modalNube .chk{justify-content:flex-start;}
+  #modalNube .chk input{margin:0;}
+  #modalNube .ok{color:var(--green);font-weight:700;}
+  #modalNube .err{color:var(--red);font-weight:700;}
+  .modal .caja{background:#fff;max-width:680px;width:100%;padding:20px 22px;box-shadow:0 12px 40px rgba(0,0,0,.3);}
+  .modal h4{margin:0 0 4px;font-size:14px;color:var(--petrol);letter-spacing:.04em;}
+  .modal p.sub{margin:0 0 14px;font-size:11.5px;color:var(--muted);line-height:1.55;}
+  .modal .lista{max-height:320px;overflow:auto;border:1px solid var(--ice-line);}
+  .modal .it{display:flex;align-items:center;gap:8px;padding:5px 9px;border-bottom:1px solid #EDF3F6;font-size:11.5px;}
+  .modal .it:last-child{border-bottom:none;}
+  .modal .it .tag{font-size:8.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+    padding:1px 5px;border:1px solid var(--ice-line);color:var(--muted);white-space:nowrap;}
+  .modal .it .tag.d{background:var(--sand);border-color:var(--sand-line);color:var(--bronze);}
+  .modal .it .prop{margin-left:auto;font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;}
+  .modal .it .ya{margin-left:auto;font-size:9px;color:var(--green);text-transform:uppercase;
+    letter-spacing:.06em;font-weight:700;}
+  .modal .nuevo{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap;}
+  .modal .nuevo input{flex:1 1 220px;font-family:inherit;font-size:11.5px;padding:7px 8px;border:1px solid #BCCFD9;}
+  .modal .nuevo select{font-family:inherit;font-size:11.5px;padding:7px 8px;border:1px solid #BCCFD9;}
+  .modal .pie{display:flex;gap:8px;margin-top:14px;}
+  .modal .pie button{font-family:inherit;font-size:11px;font-weight:700;letter-spacing:.05em;
+    text-transform:uppercase;padding:9px 15px;cursor:pointer;border:none;background:var(--petrol);color:#fff;}
+  .modal .pie button.sec{background:#EAF2F6;color:var(--petrol);}
+  .pasos{counter-reset:p;margin:0 0 6px;padding:0;list-style:none;}
+  .pasos li{position:relative;padding:7px 0 7px 30px;font-size:12px;border-bottom:1px dotted var(--ice-line);}
+  .pasos li:before{counter-increment:p;content:counter(p);position:absolute;left:0;top:6px;width:20px;height:20px;
+    background:var(--petrol);color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;
+    justify-content:center;}
+  .pasos b{color:var(--petrol);}
+  .pasos .nota{display:block;margin-top:3px;font-size:10.5px;color:var(--muted);line-height:1.45;}
+  .pasos li{line-height:1.5;}
+  .chk{display:flex;align-items:center;gap:7px;margin-top:12px;font-size:11px;color:var(--muted);}
+
+  .toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);
+    background:var(--petrol);color:#fff;font-size:11.5px;padding:9px 16px;opacity:0;pointer-events:none;
+    transition:.25s;z-index:80;}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+
+
+  /* ---------------- Resumen ejecutivo ---------------- */
+  .resumen{margin-top:18px;border:1px solid var(--ice-line);background:#fff;}
+  .resumen-head{display:flex;align-items:center;gap:10px;background:#F2F7F9;border-bottom:1px solid var(--ice-line);
+    padding:6px 12px;}
+  .resumen-head h2{margin:0;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--petrol);font-weight:700;}
+  .resumen-head .sub{margin-left:auto;font-size:9.5px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;font-weight:700;}
+  .paneles{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--ice-line);}
+  .panel{background:#fff;padding:9px 12px 10px;}
+  .panel h5{margin:0 0 7px;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--petrol-mid);font-weight:700;}
+  .stack{display:flex;height:15px;width:100%;overflow:hidden;background:#EEF3F6;}
+  .stack span{display:block;height:100%;}
+  .stack-ley{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px;font-size:10px;color:#3C4F59;}
+  .stack-ley i{display:inline-block;width:8px;height:8px;margin-right:4px;vertical-align:-1px;}
+  .stack-ley b{font-variant-numeric:tabular-nums;}
+  .brow{display:flex;align-items:center;gap:6px;margin-bottom:3px;font-size:10.5px;}
+  .brow .lab{width:44%;color:#33454F;line-height:1.25;}
+  .brow .track{flex:1;height:9px;background:#EEF3F6;}
+  .brow .fill{display:block;height:100%;background:var(--petrol-mid);}
+  .brow .val{width:20px;text-align:right;font-weight:700;font-variant-numeric:tabular-nums;color:var(--petrol);}
+  .resumen.r-desarme .resumen-head{background:var(--sand);border-bottom-color:var(--sand-line);}
+  .resumen.r-desarme .resumen-head h2{color:var(--bronze);}
+  .resumen.r-desarme .panel h5{color:var(--bronze-mid);}
+  .resumen.r-desarme .brow .fill{background:var(--bronze-mid);}
+  .resumen.r-desarme .brow .val{color:var(--bronze);}
+  .resumen.r-desarme .clave b{color:var(--bronze);}
+  .fase-cuerpo .resumen{margin:10px 0 2px;}
+  .resumen .brow.c-cliente .fill{background:var(--amber);} .resumen .brow.c-cliente .val{color:var(--amber);}
+  .resumen .brow.c-des .fill{background:var(--bronze-mid);} .resumen .brow.c-des .val{color:var(--bronze);}
+  .resumen .brow.c-fin .fill{background:var(--green);} .resumen .brow.c-fin .val{color:var(--green);}
+  .resumen .brow.c-red .fill{background:var(--red);} .resumen .brow.c-red .val{color:var(--red);}
+  .clave{margin-top:7px;padding-top:6px;border-top:1px dotted var(--ice-line);font-size:10.5px;color:#33454F;line-height:1.45;}
+  .clave b{color:var(--petrol);}
+
+  /* ================= IMPRESIÓN / PDF ================= */
+  @page{size:Letter portrait;margin:9mm 10mm 8mm;}
+  @media print{
+    body{background:#fff;padding-top:0;font-size:9pt;}
+    .bar,.hint,.aviso,.filtros,.toast,.modal,.tools,.rowadd,.addclient{display:none !important;}
+    body.edit td.tools,body.edit th.tools{display:none !important;}
+    .sheet{max-width:none;margin:0;padding:0;box-shadow:none;background:#fff;}
+    .head{padding-bottom:7px;} h1{font-size:17pt;} .head-month{font-size:10.5pt;}
+    .head-sub,.head-meta{font-size:7.6pt;} .eyebrow{font-size:6.6pt;}
+    .kpis{margin-top:8px;gap:5px;} .kpi{padding:5px 8px;min-width:0;flex:1 1 0;}
+    .kpi .n{font-size:12.5pt;} .kpi .t{font-size:6pt;}
+    .fase{margin-top:8px;padding-bottom:4px;border-width:1.5px;}
+    .fase-banner{padding:4px 10px;} .fase-banner h2{font-size:10pt;} .fase-banner .n{font-size:6.6pt;padding:2px 6px;}
+    .fase-cuerpo{padding:0 8px;}
+    .client{margin-top:6px;} .client-head{padding:3px 8px;} .client-head h3{font-size:8.6pt;}
+    .client-head .count{font-size:6.4pt;} .ito-tag{font-size:6pt;padding:1px 5px;}
+    .ito-nota{font-size:6.8pt;padding:3px 8px;}
+    thead th{font-size:6.1pt;padding:2px 4px;letter-spacing:.02em;line-height:1.15;}
+    tbody td{padding:2px 5px;font-size:7.4pt;line-height:1.3;}
+    .badge{font-size:6.3pt;padding:1px 4px;} .estado-txt{font-size:7pt;}
+    .aporte-item{font-size:7.2pt;} .resp{font-size:6.1pt;padding:0 4px;letter-spacing:0;}
+    .obs{font-size:7.2pt;} .meta{font-size:6.2pt;} .ito-chip{font-size:5.9pt;padding:0 3px;} .ns{font-size:6.6pt;} .flag{font-size:6.2pt;padding:0 3px;}
+    .orden{font-size:7.2pt;} .fecha{font-size:7.4pt;}
+    col.c-tools{width:0 !important;}
+    .closing{margin-top:6px;padding-top:5px;break-inside:avoid;display:flex;
+      justify-content:space-between;align-items:flex-end;gap:14px;}
+    .leyenda{margin-top:0;justify-content:flex-end;max-width:62%;font-size:6.4pt;gap:10px;}
+    .sign b{font-size:8.6pt;} .sign span{font-size:7.4pt;}
+    .filtroaviso{font-size:7pt;padding:4px 8px;}
+    .resumen{margin-top:9px;} .resumen-head{padding:3px 9px;} .resumen-head h2{font-size:8pt;}
+    .resumen-head .sub{font-size:6.2pt;} .panel{padding:5px 9px 6px;} .panel h5{font-size:6.2pt;margin-bottom:5px;}
+    .stack{height:10px;} .stack-ley{font-size:6.4pt;gap:7px;margin-top:4px;}
+    .brow{font-size:6.8pt;margin-bottom:2px;} .brow .track{height:7px;} .brow .val{font-size:6.8pt;}
+    .clave{font-size:6.8pt;margin-top:5px;padding-top:4px;}
+    .resumen,.panel{break-inside:avoid;}
+    tr,.fase-banner{break-inside:avoid;page-break-inside:avoid;}
+    .client{break-inside:auto;page-break-inside:auto;}
+    .client-head,.ito-nota,thead{break-after:avoid;page-break-after:avoid;}
+  }
+
+  /* ================= MÓVIL ================= */
+  @media screen and (max-width:820px){
+    .sheet{padding:20px 14px;margin:12px 0;}
+    .filtros,.hint,.aviso{margin:12px 8px -4px;}
+    .head{flex-direction:column;align-items:flex-start;} .head-meta{text-align:left;}
+    .fase-cuerpo{padding:0 6px;}
+    table,thead,tbody,tr,td{display:block;width:100%;}
+    thead{display:none;}
+    tbody tr{border:1px solid var(--rule);margin-bottom:10px;padding:4px 0;}
+    tbody td{border:none;border-bottom:1px dotted var(--rule);padding:6px 10px;}
+    tbody td:last-child{border-bottom:none;}
+    tbody td::before{content:attr(data-l);display:block;font-size:8.5px;font-weight:700;
+      letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:2px;}
+    tr td:first-child{box-shadow:none !important;}
+    .kpi{min-width:44%;}
+    .paneles{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body class="">
+
+<div class="bar">
+  <span class="brand">Reporte Estado de RAN</span>
+  <span class="guardado" id="nubeEstado"></span>
+  <span class="guardado" id="guardado"></span>
+  <button id="btnUndo" type="button" title="Deshacer el último cambio">↩️ Deshacer</button>
+  <button id="btnClientes" type="button" title="Agregar clientes desde la cartera">🏢 Clientes</button>
+  <button id="btnEstados" type="button" title="Ver, agregar o quitar estados">📋 Estados</button>
+  <button id="btnFamilias" type="button" title="Familias de aportes de cliente">🔩 Aportes</button>
+  <button id="btnResumen" type="button" title="Mostrar u ocultar el resumen ejecutivo">📊 Resumen</button>
+  <button id="btnEdit" type="button">✏️ Editar</button>
+  <button id="btnNubeGuardar" class="nube" type="button" title="Guarda los datos en Supabase">☁️ Guardar nube</button>
+  <button id="btnNubeCargar" class="nube" type="button" title="Trae los datos guardados en Supabase">☁️ Cargar nube</button>
+  <button id="btnNubeCfg" type="button" title="Configuración de la nube">⚙️</button>
+  <button id="btnSave" class="save" type="button" title="Descarga el HTML con todo lo editado (Ctrl+S)">💾 Guardar archivo</button>
+  <button id="btnPrint" type="button" title="Genera el PDF limpio">🖨️ PDF</button>
+</div>
+
+<div class="aviso" id="aviso">
+  <span id="avisoTxt"></span>
+  <button id="btnRestaurar" type="button">Restaurar</button>
+  <button id="btnDescartar" type="button">Descartar</button>
+</div>
+
+<div class="hint" id="hint">
+  <button class="cerrar" id="btnCerrarAyuda" type="button">Ocultar ayuda</button>
+  <b>Modo edición.</b> Escribe directo en cada casillero y avanza con <b>Tab</b>. Todo se guarda solo en el navegador;
+  al terminar presiona <b>☁️ Guardar nube</b> para dejar los datos disponibles en cualquier equipo,
+  o <b>💾 Guardar archivo</b> (Ctrl+S) si quieres además una copia en tu PC.
+  <br><b>Estado:</b> lista única, la misma para las dos secciones; define solo el color de la fila.
+  Con <b>📋 Estados</b> agregas estados nuevos o cambias su color.
+  <br><b>Sección:</b> en la columna <b>Opciones</b> de cada orden eliges si va en ensamble o en desarme y evaluación.
+  <br><b>Clientes:</b> con <b>🏢 Clientes</b> agregas cualquier cliente de la cartera con un clic.
+  <br><b>Resumen ejecutivo:</b> en <b>📋 Estados</b> defines la etapa de cada estado y en <b>🔩 Aportes</b> las
+  familias con que se agrupan los pendientes; ambos alimentan los paneles del resumen.
+  <br><b>ITO:</b> el botón junto al nombre del cliente marca a los que exigen ITO y la leyenda aparece sola.
+  <br><b>Negrita:</b> encierra el texto entre dos asteriscos, por ejemplo <b>**acoplamiento HSS**</b>.
+</div>
+
+<div class="filtros" id="filtros">
+  <label for="fBuscar">Buscar</label>
+  <input type="text" id="fBuscar" placeholder="RAN, orden, modelo, estado, aporte…">
+  <label for="fCliente">Cliente</label>
+  <select id="fCliente"><option value="">Todos</option></select>
+  <label for="fFase">Sección</label>
+  <select id="fFase">
+    <option value="">Todas</option>
+    <option value="ensamble">Equipos en ensamble</option>
+    <option value="desarme">Equipos en desarme y evaluación</option>
+  </select>
+  <button class="tog" id="fAporte" type="button">Solo con aportes pendientes</button>
+  <button class="tog" id="fIto" type="button">Solo clientes con ITO</button>
+  <button class="limpiar" id="fLimpiar" type="button">Limpiar filtros</button>
+</div>
+
+<div id="app"></div>
+
+<!-- Catálogo de estados -->
+<div class="modal" id="modalEstados">
+  <div class="caja">
+    <h4>Catálogo de estados</h4>
+    <p class="sub">Lista única de estados: sirven tanto para ensamble como para desarme y evaluación.
+      La sección de cada orden se elige en su propia fila. Aquí defines el <b>color</b> con que se pinta cada estado
+      y la <b>etapa</b> del proceso en que se cuenta dentro del resumen ejecutivo.</p>
+    <div class="lista" id="listaEstados"></div>
+    <div class="nuevo">
+      <input type="text" id="nvNombre" placeholder="Nombre del nuevo estado">
+      <select id="nvEtapa"></select>
+      <select id="nvTipo">
+        <option value="proceso">Color: en proceso</option>
+        <option value="cliente">Color: espera de cliente</option>
+        <option value="ito">Color: espera de ITO</option>
+        <option value="finalizado">Color: finalizado</option>
+      </select>
+      <button class="addbtn" id="nvAgregar" type="button">+ Agregar</button>
+    </div>
+    <div class="pie"><button id="cerrarEstados" type="button" class="sec">Cerrar</button></div>
+  </div>
+</div>
+
+<!-- Cartera de clientes -->
+<div class="modal" id="modalClientes">
+  <div class="caja">
+    <h4>Cartera de clientes</h4>
+    <p class="sub">El cliente entra con una orden en blanco lista para completar.
+      Si ya está en el reporte, el botón <b>+ Orden</b> le agrega una orden nueva en la sección elegida.</p>
+    <div class="nuevo" style="margin:0 0 10px">
+      <label style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5F7381;align-self:center">Agregar a la sección</label>
+      <select id="clientesFase">
+        <option value="ensamble">Equipos en ensamble</option>
+        <option value="desarme">Equipos en desarme y evaluación</option>
+      </select>
+      <span style="align-self:center;font-size:10px;font-weight:700;letter-spacing:.06em;color:#0E3A4E">→ <span id="clientesDestino"></span></span>
+    </div>
+    <div class="lista" id="listaClientes"></div>
+    <div class="nuevo">
+      <input type="text" id="nvCliente" placeholder="Nombre de un cliente que no está en la lista">
+      <button class="addbtn" id="nvClienteAdd" type="button">+ Agregar a la cartera</button>
+    </div>
+    <div class="pie"><button id="cerrarClientes" type="button" class="sec">Cerrar</button></div>
+  </div>
+</div>
+
+<!-- Familias de aportes -->
+<div class="modal" id="modalFamilias">
+  <div class="caja">
+    <h4>Familias de aportes de cliente</h4>
+    <p class="sub">El panel <b>Aportes de cliente pendientes</b> agrupa por estas familias. Escribe las palabras que
+      identifican cada una, separadas por coma: si un aporte contiene cualquiera de ellas, suma a esa familia.
+      Un aporte que no calce con ninguna se muestra igual, con su texto tal cual.</p>
+    <div class="lista" id="listaFamilias"></div>
+    <div class="nuevo">
+      <input type="text" id="nvFamLab" placeholder="Nombre de la familia. Ej: Sello mecánico">
+      <input type="text" id="nvFamClaves" placeholder="Palabras: sello, sellos, sello de eje">
+      <button class="addbtn" id="nvFamAdd" type="button">+ Agregar</button>
+    </div>
+    <div class="pie">
+      <button id="cerrarFamilias" type="button" class="sec">Cerrar</button>
+      <button id="restaurarFamilias" type="button" class="sec">Restaurar lista original</button>
+    </div>
+  </div>
+</div>
+
+<!-- Configuración de la nube -->
+<div class="modal" id="modalNube">
+  <div class="caja">
+    <h4>Guardado en la nube (Supabase)</h4>
+    <p class="sub">Con esto los datos dejan de vivir en el archivo y pasan a vivir en una tabla: el reporte se puede
+      abrir desde cualquier computador o desde el celular y siempre trae la última versión guardada.
+      La clave es la pública (anon), la misma que ya usa su aplicación de planificación.</p>
+    <div class="nuevo" style="flex-direction:column;align-items:stretch;gap:8px">
+      <label class="lbl" style="margin:0">URL del proyecto</label>
+      <input type="text" id="cfgUrl" placeholder="https://xxxx.supabase.co">
+      <label class="lbl" style="margin:0">Clave pública (anon / publishable)</label>
+      <input type="text" id="cfgKey" placeholder="sb_publishable_…">
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <div style="flex:1 1 150px"><label class="lbl" style="margin:0">Tabla</label>
+          <input type="text" id="cfgTabla" placeholder="pie_data" style="width:100%"></div>
+        <div style="flex:1 1 150px"><label class="lbl" style="margin:0">Columna de datos</label>
+          <input type="text" id="cfgCol" placeholder="data" style="width:100%"></div>
+        <div style="flex:1 1 150px"><label class="lbl" style="margin:0">Fila (id)</label>
+          <input type="text" id="cfgFila" placeholder="reporte_ran" style="width:100%"></div>
+      </div>
+      <label class="chk" style="margin-top:2px"><input type="checkbox" id="cfgAuto">
+        Cargar automáticamente desde la nube al abrir el reporte</label>
+    </div>
+    <div id="cfgMsg" class="sub" style="margin-top:10px"></div>
+    <div class="pie">
+      <button id="cfgProbar" type="button">Probar conexión</button>
+      <button id="cfgGuardar" type="button" class="sec">Guardar configuración</button>
+      <button id="cerrarNube" type="button" class="sec">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Guía de impresión -->
+<div class="modal" id="modalPdf">
+  <div class="caja">
+    <h4>Generar el PDF limpio</h4>
+    <p class="sub">La fecha y la ruta <i>file:///C:/Users/…</i> las agrega el navegador solo cuando el destino es una
+      <b>impresora</b> o <b>Microsoft Print to PDF</b>. Con el destino <b>Guardar como PDF</b> no se agregan, y por eso
+      en las versiones nuevas de Chrome la casilla "Encabezados y pies de página" ni siquiera aparece.</p>
+    <ol class="pasos">
+      <li>En <b>Destino</b> elige <b>Guardar como PDF</b>.
+        <span class="nota">Si dice <i>Microsoft Print to PDF</i> o el nombre de una impresora, cámbialo: ese es el
+        único caso en que salen la fecha y la ruta.</span></li>
+      <li>Deja <b>Tamaño de papel: Letter</b>, <b>Escala: 100</b> y <b>Márgenes: Predeterminado</b>.</li>
+      <li>En el grupo <b>Opciones</b>, activa <b>Gráficos del fondo</b> para conservar los colores.
+        <span class="nota">Si en ese grupo aparece <b>Encabezados y pies de página</b>, desmárcala.
+        Si no aparece, no hay nada que hacer: el archivo ya sale limpio.</span></li>
+      <li>Presiona <b>Guardar</b>.</li>
+    </ol>
+    <p class="sub" style="margin:10px 0 0">Evita el enlace <i>Imprimir usando el diálogo de sistema</i>: ese cuadro sí
+      agrega encabezado y pie, y no permite quitarlos.</p>
+    <label class="chk"><input type="checkbox" id="pdfNoMostrar"> No volver a mostrar este recordatorio</label>
+    <div class="pie">
+      <button id="pdfSeguir" type="button">Abrir impresión</button>
+      <button id="pdfCancelar" type="button" class="sec">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  var R, edit=false, dirty=false, focoPendiente=null, borradorFecha=null;
+  var app = document.getElementById("app");
+  var LSKEY = "reporteRAN.v5";
+  var LSPDF = "reporteRAN.pdfAviso";
+  var LSNUBE = "reporteRAN.copiaNube";
+  var FILTRO = { q:"", cliente:"", fase:"", aporte:false, ito:false };
+
+  var RESPONSABLES = ["Ventas Externas","Taller de producción"];
+  var NUBE_DEF = {
+    url:    "https://wlxhephhhlhufgwfmwfm.supabase.co",
+    key:    "sb_publishable_WOTPiecKx5ai4F6feLbexQ_doYTScvd",
+    tabla:  "pie_data",
+    columna:"data",
+    fila:   "reporte_ran",
+    auto:   true
+  };
+  var ITO_TXT = "Cliente exige presencia de ITO en las etapas de revisión durante el proceso.";
+
+  /* Catálogo de estados: n = nombre, f = sección, t = color. El color y la sección
+     se aplican solos a la orden cada vez que se elige el estado. */
+  /* Catálogo de estados: lista única. El estado NO define la sección, solo el color
+     sugerido de la fila (se puede cambiar desde el panel 📋 Estados). */
+  var ESTADOS_BASE = [
+    {n:"Equipo recepcionado",                                       t:"proceso"},
+    {n:"En desarme",                                                t:"proceso"},
+    {n:"En evaluación",                                             t:"proceso"},
+    {n:"En espera visita de ITO revisión de evaluación",            t:"ito"},
+    {n:"En informe evaluación",                                     t:"proceso"},
+    {n:"En costeo",                                                 t:"proceso"},
+    {n:"En espera repuestos",                                       t:"proceso"},
+    {n:"En programación",                                           t:"proceso"},
+    {n:"En espera visita de ITO revisión de repuestos",             t:"ito"},
+    {n:"En ensamble inicial",                                       t:"proceso"},
+    {n:"En espera visita de ITO revisión de juegos axiales",        t:"ito"},
+    {n:"En ensamble final",                                         t:"proceso"},
+    {n:"En pruebas dinámicas internas",                             t:"proceso"},
+    {n:"En espera visita de ITO revisión de pruebas dinámicas",     t:"ito"},
+    {n:"Equipo ensamblado, en espera de aportes de cliente",        t:"cliente"},
+    {n:"En montaje de acoplamientos y accesorios",                  t:"proceso"},
+    {n:"En espera visita de ITO revisión montaje de acoplamientos", t:"ito"},
+    {n:"En pintura",                                                t:"proceso"},
+    {n:"En liberación interna",                                     t:"proceso"},
+    {n:"En espera visita de ITO liberación de equipo",              t:"ito"},
+    {n:"En embalaje",                                               t:"proceso"},
+    {n:"En informe reparación",                                     t:"proceso"},
+    {n:"En espera de despacho",                                     t:"cliente"},
+    {n:"Equipo listo despacho",                                     t:"finalizado"},
+    {n:"Despachado",                                                t:"finalizado"},
+    {n:"En espera de confirmación",                                 t:"cliente"},
+    {n:"Equipo sin orden de compra",                                t:"cliente"},
+    {n:"Preservación y pruebas dinámicas",                          t:"proceso"}
+  ];
+
+
+  /* Cartera de clientes */
+  var CLIENTES_BASE = [
+    "MINERA ESCONDIDA","MINERA RADOMIRO TOMIC","MINERA EL SALVADOR","MINERA GABRIELA MISTRAL",
+    "MINERA CENTINELA","KOSPO POWER SERVICE LTDA.","MINERA ANTUCOYA","MINERA SPENCE S.A.",
+    "CÍA. MINERA DEL PACÍFICO S.A.","EMPRESA ELÉCTRICA ANGAMOS SPA","EMPRESA ELÉCTRICA COCHRANE SPA",
+    "CODELCO DIVISIÓN PTMP","COMPAÑÍA MINERA ZALDÍVAR SPA","SCM MINERA LUMINA COPPER","SQM SALAR SPA",
+    "MINERA GUANACO","MINERA MINISTRO HALES","MINERA CHUQUICAMATA","MINERA LOS PELAMBRES",
+    "MANTOS COPPER S.A.","MINERA MANTOS DE ORO","MINERA MANTOS VERDE SPA","MINERA EL ABRA"
+  ];
+
+  try{ R = JSON.parse(document.getElementById("datos").textContent); }
+  catch(e){ app.innerHTML = "<p style='padding:30px'>No se pudieron leer los datos del archivo.</p>"; return; }
+
+  var ORIGINAL = JSON.stringify(R);
+  var hist = [], ultimo = ORIGINAL;
+
+  function esc(s){
+    return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;")
+      .replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+  }
+  function fmt(s){ return esc(s).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/\n/g,"<br>"); }
+  function toast(msg){
+    var t=document.getElementById("toast");
+    t.textContent=msg; t.classList.add("show");
+    setTimeout(function(){ t.classList.remove("show"); }, 2400);
+  }
+  function catEstados(){ return ESTADOS_BASE.concat(R.estados||[]); }
+  function buscarEstado(n){
+    var c=catEstados();
+    for(var i=0;i<c.length;i++) if(c[i].n===n) return c[i];
+    return null;
+  }
+  function catClientes(){
+    var extra = (R.catalogoClientes||[]).filter(function(x){ return CLIENTES_BASE.indexOf(x)<0; });
+    return CLIENTES_BASE.concat(extra);
+  }
+  function clienteEnReporte(n){
+    return (R.clientes||[]).some(function(c){
+      return String(c.cliente||"").toUpperCase().trim() === String(n).toUpperCase().trim(); });
+  }
+
+  /* ---------- historial ---------- */
+  function snap(){
+    hist.push(ultimo);
+    if(hist.length>80) hist.shift();
+    ultimo = JSON.stringify(R);
+    document.getElementById("btnUndo").disabled = false;
+  }
+  var tSnap=null;
+  function snapDiferido(){
+    clearTimeout(tSnap);
+    tSnap = setTimeout(function(){ if(JSON.stringify(R)!==ultimo) snap(); }, 1100);
+  }
+
+  /* ---------- borrador ---------- */
+  var tAuto=null;
+  function autoguardar(){
+    clearTimeout(tAuto);
+    tAuto = setTimeout(function(){
+      try{
+        localStorage.setItem(LSKEY, JSON.stringify({ fecha:new Date().toISOString(), datos:R }));
+        var d=new Date();
+        marcar("Guardado "+("0"+d.getHours()).slice(-2)+":"+("0"+d.getMinutes()).slice(-2));
+      }catch(e){}
+    }, 600);
+  }
+  function marcar(t){ document.getElementById("guardado").textContent = t; }
+  function cambio(){ dirty=true; autoguardar(); snapDiferido(); }
+
+  /* ---------- campos ---------- */
+  function inp(path, val, opts){
+    opts = opts||{};
+    return '<input class="f '+(opts.cls||"")+'" type="text" data-f="'+path+'"'
+      + ' value="'+esc(val==null?"":val)+'"'
+      + (opts.ph ? ' placeholder="'+esc(opts.ph)+'"' : "")
+      + (opts.list ? ' list="'+opts.list+'"' : "") + '>';
+  }
+  function area(path, val, ph, filas){
+    return '<textarea class="f grow" data-f="'+path+'" rows="'+(filas||2)+'"'
+      + (ph ? ' placeholder="'+esc(ph)+'"' : "") + '>'+esc(val==null?"":val)+'</textarea>';
+  }
+  function campoFecha(path, val, ph){
+    return '<div class="fila-fecha">'+inp(path,val,{ph:ph||"dd-mm-aaaa",list:"dl-fecha",cls:"mono sm"})
+      + '<input type="date" class="dpick" data-target="'+path+'" title="Elegir en el calendario"></div>';
+  }
+  function selIto(path, val){
+    var v = val||"";
+    return '<select class="f sm" data-f="'+path+'"><option value="">— no aplica —</option>'
+      + ITO_ESTADOS.map(function(x){ return '<option value="'+esc(x)+'"'+(x===v?" selected":"")+'>'+esc(x)+'</option>'; }).join("")
+      + '</select>';
+  }
+  function selEstado(path, val){
+    var c = catEstados(), conocido=false;
+    var h = c.map(function(e){
+      if(e.n===val) conocido = true;
+      return '<option value="'+esc(e.n)+'"'+(e.n===val?" selected":"")+'>'+esc(e.n)+'</option>';
+    }).join("");
+    return '<select class="f" data-f="'+path+'" data-estado="1">'
+      + (!conocido && val ? '<option value="'+esc(val)+'" selected>'+esc(val)+' (sin catalogar)</option>' : "")
+      + h + '<option value="__nuevo__">➕ Agregar nuevo estado…</option></select>';
+  }
+  function selFase(path, val){
+    var v = val==="desarme" ? "desarme" : "ensamble";
+    return '<select class="f sm" data-f="'+path+'" data-fase-sel="1">'
+      + '<option value="ensamble"'+(v==="ensamble"?" selected":"")+'>Ensamble</option>'
+      + '<option value="desarme"'+(v==="desarme"?" selected":"")+'>Desarme y evaluación</option>'
+      + '</select>';
+  }
+  function selResp(path, val){
+    var v = val==null?"":val, lista = RESPONSABLES.slice();
+    if(v && lista.indexOf(v)<0) lista.push(v);
+    return '<select class="f" data-f="'+path+'"><option value="">— sin responsable —</option>'
+      + lista.map(function(o){ return '<option value="'+esc(o)+'"'+(o===v?" selected":"")+'>'+esc(o)+'</option>'; }).join("")
+      + '</select>';
+  }
+
+  /* ---------- filtros ---------- */
+  function pasaFiltro(o, cli){
+    if(FILTRO.cliente && cli.cliente!==FILTRO.cliente) return false;
+    if(FILTRO.fase && faseDe(o)!==FILTRO.fase) return false;
+    if(FILTRO.aporte && !(o.aporte||"").trim()) return false;
+    if(FILTRO.ito && !cli.ito) return false;
+    if(FILTRO.q){
+      var t = [o.orden,o.ran,o.modelo,o.ns,o.fecha,o.fechaOriginal,o.fechaIngreso,o.fechaAporte,
+               o.estado,o.detalle,o.aporte,o.obs,o.itoEstado,cli.cliente]
+        .join(" ").toLowerCase();
+      if(t.indexOf(FILTRO.q.toLowerCase())<0) return false;
+    }
+    return true;
+  }
+  function hayFiltro(){ return !!(FILTRO.q||FILTRO.cliente||FILTRO.fase||FILTRO.aporte||FILTRO.ito); }
+
+  /* ---------- sección: propia de la orden · color: del estado ---------- */
+  function faseDe(o){ return o.fase==="desarme" ? "desarme" : "ensamble"; }
+  function tipoDe(o){
+    var ov = (R.coloresEstado||{})[o.estado];
+    if(ov) return ov;
+    var e = buscarEstado(o.estado);
+    return e ? e.t : (o.tipo||"proceso");
+  }
+
+  var ITO_ESTADOS = ["No solicitada","Solicitada","Confirmada","Realizada"];
+  function itoChip(o){
+    var e = (o.itoEstado||"").trim();
+    if(!e) return "";
+    var cls = e==="Realizada" ? " hecha" : (e==="No solicitada" ? " pend" : "");
+    return '<span class="ito-chip'+cls+'">ITO '+esc(e)+(o.itoFecha? " · "+esc(o.itoFecha) : "")+'</span>';
+  }
+
+  /* ---------- fila de lectura ---------- */
+  function filaVista(o){
+    var tipo = tipoDe(o);
+    var modelo = esc(o.modelo)
+      + (o.flag ? '<span class="flag">'+esc(o.flag)+'</span>' : "")
+      + (o.ns ? '<span class="ns">'+esc(o.ns)+'</span>' : "");
+    var estado = '<span class="badge t-'+esc(tipo)+'">'+esc(o.estado)+'</span>'
+      + (o.detalle ? '<span class="estado-txt">'+fmt(o.detalle)+'</span>' : "")
+      + itoChip(o);
+
+    /* Fecha: compromiso vigente + reprogramación + días en planta */
+    var fechaHtml = '<span class="fecha">'+esc(o.fecha)+'</span>';
+    var desv = (o.fechaOriginal && o.fechaOriginal!==o.fecha) ? diasEntre(o.fechaOriginal, o.fecha) : null;
+    if(o.fechaOriginal && o.fechaOriginal!==o.fecha){
+      fechaHtml += '<span class="meta alerta">Original '+esc(o.fechaOriginal)
+        + (desv!==null ? ' · '+(desv>0?"+":"")+desv+' d' : "")+'</span>';
+    }
+    var enPlanta = diasDesde(o.fechaIngreso);
+    if(enPlanta!==null){
+      fechaHtml += '<span class="meta'+(enPlanta>60?" alerta":"")+'">En planta '+enPlanta+' d · ingreso '+esc(o.fechaIngreso)+'</span>';
+    }
+
+    var ap = (o.aporte||"").trim(), apHtml;
+    if(ap){
+      apHtml = ap.split("\n").filter(function(x){ return x.trim(); })
+        .map(function(x){ return '<span class="aporte-item">• '+fmt(x.trim())+'</span>'; }).join("");
+      var r = (o.responsable||"").trim();
+      if(r) apHtml += '<span class="resp '+(/ventas/i.test(r)?"r-ventas":"r-taller")+'">'+esc(r)+'</span>';
+      var dAp = diasDesde(o.fechaAporte);
+      if(dAp!==null) apHtml += '<span class="meta'+(dAp>30?" alerta":"")+'">Solicitado '+esc(o.fechaAporte)+' · '+dAp+' d</span>';
+    } else { apHtml = '<span class="none">Sin aportes pendientes</span>'; }
+
+    return '<tr class="t-'+esc(tipo)+'">'
+      + '<td class="orden"  data-l="Orden">'+esc(o.orden)+'</td>'
+      + '<td class="ran"    data-l="RAN">'+esc(o.ran)+'</td>'
+      + '<td class="modelo" data-l="Modelo">'+modelo+'</td>'
+      + '<td class="fecha"  data-l="Fecha">'+fechaHtml+'</td>'
+      + '<td data-l="Estado">'+estado+'</td>'
+      + '<td data-l="Aportes de cliente">'+apHtml+'</td>'
+      + '<td class="obs" data-l="Observaciones">'
+        + (o.obs ? fmt(o.obs) : '<span class="none">&mdash;</span>') + '</td>'
+      + '<td class="tools"></td></tr>';
+  }
+
+  /* ---------- fila de edición ---------- */
+  function filaEdicion(o, ci, oi, total){
+    var tipo = tipoDe(o);
+    var p = "clientes."+ci+".ordenes."+oi+".";
+    var nombreColor = {proceso:"En proceso", cliente:"Espera de cliente", ito:"Espera de ITO", finalizado:"Finalizado"}[tipo]||tipo;
+
+    var tools = '<td class="tools" data-l="Opciones">'
+      + '<span class="lbl">Sección</span>' + selFase(p+"fase", o.fase)
+      + '<span class="lbl">Mover / copiar</span>'
+      + '<div class="mover">'
+        + '<button type="button" class="mini" data-mover="-1" data-ci="'+ci+'" data-oi="'+oi+'"'+(oi===0?" disabled":"")+' title="Subir">▲</button>'
+        + '<button type="button" class="mini" data-mover="1" data-ci="'+ci+'" data-oi="'+oi+'"'+(oi===total-1?" disabled":"")+' title="Bajar">▼</button>'
+        + '<button type="button" class="mini" data-dup="1" data-ci="'+ci+'" data-oi="'+oi+'" title="Duplicar">⧉</button>'
+      + '</div>'
+      + '<button type="button" class="mini del" data-del-orden="1" data-ci="'+ci+'" data-oi="'+oi+'">Eliminar</button>'
+      + '<span class="auto">Color automático:<br>'+esc(nombreColor)+'</span>'
+      + '</td>';
+
+    return '<tr class="t-'+esc(tipo)+'">'
+      + '<td class="orden" data-l="Orden">'+inp(p+"orden",o.orden,{ph:"N° de orden",cls:"mono"})+'</td>'
+      + '<td class="ran"   data-l="RAN">'+inp(p+"ran",o.ran,{ph:"RAN",cls:"mono"})+'</td>'
+      + '<td class="modelo" data-l="Modelo">'
+        + inp(p+"modelo",o.modelo,{ph:"Modelo del equipo"})
+        + '<span class="lbl">N/S</span>'+inp(p+"ns",o.ns,{ph:"Opcional",cls:"sm"})
+        + '<span class="lbl">Etiqueta roja</span>'+inp(p+"flag",o.flag,{ph:"Opcional",cls:"sm",list:"dl-flag"})
+        + '</td>'
+      + '<td data-l="Fecha">'
+        + '<span class="lbl">Compromiso vigente</span>' + campoFecha(p+"fecha", o.fecha)
+        + '<span class="lbl">Compromiso original</span>' + campoFecha(p+"fechaOriginal", o.fechaOriginal)
+        + '<span class="lbl">Ingreso a taller</span>' + campoFecha(p+"fechaIngreso", o.fechaIngreso)
+        + '</td>'
+      + '<td data-l="Estado">'
+        + selEstado(p+"estado", o.estado)
+        + '<span class="lbl">Detalle (opcional)</span>'
+        + area(p+"detalle",o.detalle,"Detalle del estado")
+        + '<span class="lbl">Visita de ITO</span>' + selIto(p+"itoEstado", o.itoEstado)
+        + (o.itoEstado ? campoFecha(p+"itoFecha", o.itoFecha, "Fecha de la visita") : "")
+        + '</td>'
+      + '<td data-l="Aportes de cliente">'
+        + area(p+"aporte",o.aporte,"Un aporte por línea. Ej: **acoplamiento HSS**")
+        + '<span class="lbl">Responsable</span>'
+        + selResp(p+"responsable", o.responsable)
+        + '<span class="lbl">Aporte solicitado el</span>' + campoFecha(p+"fechaAporte", o.fechaAporte)
+        + '</td>'
+      + '<td data-l="Observaciones">'+area(p+"obs",o.obs,"Observaciones")+'</td>'
+      + tools + '</tr>';
+  }
+
+  /* ---------- bloque de cliente ---------- */
+  function bloque(c, ci, fase){
+    var ords = c.ordenes||[], filas=[], visibles=0, pend=0;
+    ords.forEach(function(o,oi){
+      if(faseDe(o)!==fase) return;
+      if(!edit && !pasaFiltro(o,c)) return;
+      visibles++;
+      if((o.aporte||"").trim()) pend++;
+      filas.push(edit ? filaEdicion(o,ci,oi,ords.length) : filaVista(o));
+    });
+    if(!visibles) return "";
+
+    var rot = visibles + (visibles===1?" orden":" órdenes")
+            + (pend ? " · "+pend+" con aporte pendiente" : "");
+    var titulo = edit
+      ? '<input class="cli" data-f="clientes.'+ci+'.cliente" type="text" value="'+esc(c.cliente)+'" placeholder="Nombre del cliente" list="dl-clientes">'
+      : '<h3>'+esc(c.cliente)+'</h3>';
+    var ito = edit
+      ? '<button type="button" class="itobtn'+(c.ito?" on":"")+'" data-ito="1" data-ci="'+ci+'">'
+        + (c.ito?"✔ Requiere ITO":"Marcar ITO")+'</button>'
+      : (c.ito ? '<span class="ito-tag">Requiere ITO</span>' : "");
+
+    var nota = "";
+    if(c.ito){
+      var txt = (c.itoNota||"").trim() || ITO_TXT;
+      nota = edit
+        ? '<div class="ito-nota"><b>ITO:</b> '+inp("clientes."+ci+".itoNota", c.itoNota, {ph:ITO_TXT})+'</div>'
+        : '<div class="ito-nota"><b>ITO:</b> '+fmt(txt)+'</div>';
+    }
+
+    return '<section class="client">'
+      + '<div class="client-head">'+titulo+ito+'<span class="count">'+esc(rot)+'</span></div>'
+      + nota
+      + '<table><colgroup><col class="c-orden"><col class="c-ran"><col class="c-modelo">'
+        + '<col class="c-fecha"><col class="c-estado"><col class="c-aporte"><col class="c-obs"><col class="c-tools"></colgroup>'
+      + '<thead><tr><th>Orden</th><th>RAN</th><th>Modelo</th><th>Fecha</th><th>Estado</th>'
+        + '<th>Aportes de cliente</th><th>Observaciones</th><th class="tools">Opciones</th></tr></thead>'
+      + '<tbody>'+filas.join("")+'</tbody></table>'
+      + '<div class="rowadd">'
+        + '<button type="button" class="addbtn" data-add-orden="1" data-ci="'+ci+'" data-fase="'+fase+'">+ Agregar orden</button>'
+        + '<button type="button" class="mini del" style="width:auto" data-del-cliente="1" data-ci="'+ci+'">Eliminar cliente</button>'
+        + '<span class="cuenta">'+esc(rot)+'</span>'
+      + '</div></section>';
+  }
+
+  function seccion(fase, titulo, icono){
+    var cl = R.clientes||[], n=0, lista=[];
+    cl.forEach(function(c){ (c.ordenes||[]).forEach(function(o){
+      if(faseDe(o)===fase && (edit||pasaFiltro(o,c))){ n++; lista.push(o); } }); });
+    var cuerpo = cl.map(function(c,ci){ return bloque(c,ci,fase); }).join("");
+    var res = (R.resumen===false || edit) ? "" : resumenHTML(lista, fase, titulo);
+    if(!cuerpo) cuerpo = '<div class="fase-vacia">Sin órdenes en esta sección'
+      + (hayFiltro()? " con los filtros aplicados." : ".")+'</div>';
+    return '<section class="fase fase-'+fase+'">'
+      + '<div class="fase-banner"><span class="ico">'+icono+'</span><h2>'+esc(titulo)+'</h2>'
+      + '<span class="n">'+n+(n===1?" orden":" órdenes")+'</span></div>'
+      + '<div class="fase-cuerpo">'+res+cuerpo
+      + '<div class="rowadd addclient"><button type="button" class="addbtn" data-abrir-clientes="1" '
+        + 'data-fase="'+fase+'">+ Agregar cliente a ' + (fase==="desarme"?"desarme y evaluación":"ensamble") + '</button>'
+      + '<span class="cuenta">'+esc(titulo)+'</span></div>'
+      + '</div></section>';
+  }
+
+  /* ================= RESUMEN EJECUTIVO =================
+     Los cuatro indicadores se calculan solos a partir de las mismas órdenes:
+     no hay ningún dato adicional que digitar. */
+
+  /* Familias de aportes: nombre visible + palabras que lo identifican.
+     Se pueden editar desde el botón 🔩 Aportes; quedan guardadas en el archivo. */
+  var FAMILIAS_BASE = [
+    {lab:"Acoplamiento HSS",        claves:["acoplamiento hss","acople hss","hss"]},
+    {lab:"Disco de freno",          claves:["disco de freno"]},
+    {lab:"Elastómeros",             claves:["elastomero","elastomeros"]},
+    {lab:"Acople y camisa LSS",     claves:["acople lss","camisa lss","lss"]},
+    {lab:"Acoplamiento hidráulico", claves:["hidraulico","acoplamiento hidraulico"]},
+    {lab:"Motor eléctrico",         claves:["motor","motor electrico"]},
+    {lab:"Acople estriado",         claves:["estriado","acople estriado"]},
+    {lab:"Orden de compra",         claves:["orden de compra"]},
+    {lab:"Confirmación de orden",   claves:["confirmacion"]},
+    {lab:"Rodamientos",             claves:["rodamiento","rodamientos"]},
+    {lab:"Fan hood",                claves:["fan hood"]},
+    {lab:"Disco",                   claves:["disco"]},
+    {lab:"Retiro del equipo",       claves:["retiro"]}
+  ];
+
+  /* Macroetapas del proceso. La etapa de cada estado se puede reasignar
+     desde 📋 Estados y queda guardada en el archivo. */
+  var ETAPAS_LISTA = ["Recepción y desarme","Evaluación e informe","Costeo y aprobación","Repuestos",
+                      "Programación y ensamble","Pruebas y aportes","Cierre y despacho"];
+  var SIN_ETAPA = "Otros estados";
+  var ETAPA_BASE = {};
+  [
+    ["Recepción y desarme",     ["Equipo recepcionado","En desarme"]],
+    ["Evaluación e informe",    ["En evaluación","En espera visita de ITO revisión de evaluación","En informe evaluación"]],
+    ["Costeo y aprobación",     ["En costeo","En espera de confirmación","Equipo sin orden de compra"]],
+    ["Repuestos",               ["En espera repuestos","En espera visita de ITO revisión de repuestos"]],
+    ["Programación y ensamble", ["En programación","En ensamble inicial","En espera visita de ITO revisión de juegos axiales","En ensamble final"]],
+    ["Pruebas y aportes",       ["En pruebas dinámicas internas","En espera visita de ITO revisión de pruebas dinámicas","Equipo ensamblado, en espera de aportes de cliente","En montaje de acoplamientos y accesorios","En espera visita de ITO revisión montaje de acoplamientos","Preservación y pruebas dinámicas"]],
+    ["Cierre y despacho",       ["En pintura","En liberación interna","En espera visita de ITO liberación de equipo","En embalaje","En informe reparación","En espera de despacho","Equipo listo despacho","Despachado"]]
+  ].forEach(function(g){ g[1].forEach(function(e){ ETAPA_BASE[e] = g[0]; }); });
+
+  function etapaDe(estado){
+    var ov = (R.etapasEstado||{})[estado];
+    if(ov) return ov;
+    return ETAPA_BASE[estado] || SIN_ETAPA;
+  }
+  function familias(){
+    return (R.familias && R.familias.length) ? R.familias : FAMILIAS_BASE;
+  }
+  function normTxt(t){
+    return String(t||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+  }
+  /* Devuelve las familias que calzan con una línea de aporte.
+     Si una palabra clave está contenida en otra más larga que también calzó
+     (por ejemplo "disco" dentro de "disco de freno"), se descarta la corta. */
+  function familiasDeLinea(txt){
+    var t = normTxt(txt.replace(/\*\*/g,"")), hits = [];
+    familias().forEach(function(f){
+      var mejor = "";
+      (f.claves||[]).forEach(function(k){
+        var kn = normTxt(k);
+        if(kn && t.indexOf(kn)>=0 && kn.length>mejor.length) mejor = kn;
+      });
+      if(mejor) hits.push({lab:f.lab, clave:mejor});
+    });
+    return hits.filter(function(h){
+      return !hits.some(function(x){
+        return x!==h && x.clave.length>h.clave.length && x.clave.indexOf(h.clave)>=0; });
+    }).map(function(h){ return h.lab; });
+  }
+
+  function parseFecha(t){
+    var m = /^(\d{1,2})-(\d{1,2})-(\d{4})$/.exec(String(t||"").trim());
+    if(!m) return null;
+    var d = new Date(+m[3], +m[2]-1, +m[1]);
+    return isNaN(d.getTime()) ? null : d;
+  }
+  function pct(n, t){ return t ? Math.round(n*100/t) : 0; }
+  function hoyCorte(){
+    var c = parseFecha(R.fechaCorte) || new Date();
+    c.setHours(0,0,0,0); return c;
+  }
+  /* días entre una fecha dd-mm-aaaa y la fecha de corte (positivo = hacia atrás) */
+  function diasDesde(txt){
+    var f = parseFecha(txt); if(!f) return null;
+    return Math.round((hoyCorte() - f) / 86400000);
+  }
+  function diasEntre(a, b){
+    var fa = parseFecha(a), fb = parseFecha(b);
+    if(!fa || !fb) return null;
+    return Math.round((fb - fa) / 86400000);
+  }
+  function barra(lab, n, max, cls){
+    return '<div class="brow '+(cls||"")+'"><span class="lab">'+esc(lab)+'</span>'
+      + '<span class="track"><span class="fill" style="width:'+(max? Math.max(3,Math.round(n*100/max)) : 0)+'%"></span></span>'
+      + '<span class="val">'+n+'</span></div>';
+  }
+  function panel(titulo, cuerpo, clave){
+    return '<div class="panel"><h5>'+esc(titulo)+'</h5>'+cuerpo
+      + (clave? '<div class="clave">'+clave+'</div>' : "")+'</div>';
+  }
+
+  function resumenHTML(lista, fase, titulo){
+    if(!lista.length) return "";
+    var T = lista.length;
+
+    /* --- 1. Quién detiene el avance --- */
+    var gCli=0, gIto=0, gTal=0, gFin=0;
+    lista.forEach(function(o){
+      var t = tipoDe(o), ap = (o.aporte||"").trim();
+      if(t==="finalizado") gFin++;
+      else if(ap || t==="cliente") gCli++;
+      else if(t==="ito") gIto++;
+      else gTal++;
+    });
+    var seg = function(n,c){ return n? '<span style="width:'+pct(n,T)+'%;background:'+c+'"></span>' : ""; };
+    var ley = function(n,c,txt){ return n? '<span><i style="background:'+c+'"></i>'+txt+': <b>'+n+'</b> ('+pct(n,T)+'%)</span>' : ""; };
+    var p1 = '<div class="stack">'+seg(gCli,"#B36A12")+seg(gIto,"#5B4B8A")+seg(gTal,"#2C6C8C")+seg(gFin,"#2C6650")+'</div>'
+      + '<div class="stack-ley">'+ley(gCli,"#B36A12","Espera de cliente")+ley(gIto,"#5B4B8A","Espera de ITO")
+      + ley(gTal,"#2C6C8C","En proceso en taller")+ley(gFin,"#2C6650","Listas o despachadas")+'</div>';
+    var c1 = gCli
+      ? '<b>'+gCli+' de '+T+' órdenes ('+pct(gCli,T)+'%)</b> no avanzan por causas ajenas al taller: dependen de un aporte, una orden de compra o una confirmación del cliente.'
+      : 'Ninguna orden está detenida por aportes de cliente.';
+
+    /* --- 2. Aportes pendientes por familia --- */
+    var cont = {}, conAporte = 0;
+    lista.forEach(function(o){
+      var ap = (o.aporte||"").trim();
+      if(!ap) return;
+      conAporte++;
+      var vistas = {};
+      ap.split("\n").forEach(function(li){
+        var txt = li.replace(/\*\*/g,"").trim();
+        if(!txt) return;
+        var labs = familiasDeLinea(txt);
+        if(labs.length) labs.forEach(function(l){ vistas[l]=1; });
+        else vistas[txt.length>34 ? txt.slice(0,34)+"…" : txt] = 1;
+      });
+      Object.keys(vistas).forEach(function(k){ cont[k] = (cont[k]||0)+1; });
+    });
+    var fam = Object.keys(cont).map(function(k){ return [k,cont[k]]; })
+      .sort(function(a,b){ return b[1]-a[1] || a[0].localeCompare(b[0]); });
+    var maxF = fam.length ? fam[0][1] : 0;
+    var p2 = fam.length
+      ? fam.slice(0,6).map(function(f){ return barra(f[0], f[1], maxF, "c-cliente"); }).join("")
+      : '<div class="clave" style="border:none;padding:0;margin:0">Sin aportes pendientes registrados.</div>';
+    var c2 = fam.length
+      ? '<b>'+esc(fam[0][0])+'</b> concentra <b>'+fam[0][1]+'</b> de las '+conAporte+' órdenes con aporte pendiente'
+        + (fam[0][1]>1 ? ': una sola gestión con el cliente libera '+fam[0][1]+' equipos.' : '.')
+      : "";
+
+    /* --- 3. Compromisos por semana --- */
+    var corte = parseFecha(R.fechaCorte) || new Date();
+    corte.setHours(0,0,0,0);
+    var finSem = new Date(corte); finSem.setDate(finSem.getDate() + ((7 - corte.getDay()) % 7));
+    var finProx = new Date(finSem); finProx.setDate(finProx.getDate() + 7);
+    var atr=0, sem=0, prox=0, ade=0, sinF=0, activas=0;
+    lista.forEach(function(o){
+      if(tipoDe(o)==="finalizado") return;
+      activas++;
+      var f = parseFecha(o.fecha);
+      if(!f){ sinF++; return; }
+      if(f < corte) atr++;
+      else if(f <= finSem) sem++;
+      else if(f <= finProx) prox++;
+      else ade++;
+    });
+    var maxS = Math.max(atr,sem,prox,ade,sinF,1);
+    var p3 = barra("Atrasadas", atr, maxS, "c-red")
+      + barra("Esta semana", sem, maxS, "c-cliente")
+      + barra("Próxima semana", prox, maxS, "")
+      + barra("Más adelante", ade, maxS, "")
+      + barra("Sin fecha", sinF, maxS, "c-des");
+    var c3 = atr
+      ? '<b>'+atr+' orden'+(atr===1?"":"es")+'</b> superó la fecha comprometida; '+sem+' vence'+(sem===1?"":"n")+' esta semana.'
+      : 'Sin órdenes atrasadas. El peak está en <b>'+(ade>=prox?"las semanas siguientes":"la próxima semana")+'</b>, con <b>'+Math.max(ade,prox)+'</b> compromisos sobre '+activas+' órdenes activas.';
+
+    /* --- 4. Distribución por etapa --- */
+    var mapa = {}, otros = 0;
+    ETAPAS_LISTA.forEach(function(l){ mapa[l]=0; });
+    lista.forEach(function(o){
+      var lab = etapaDe(o.estado);
+      if(mapa[lab]!==undefined) mapa[lab]++; else otros++;
+    });
+    var filas = ETAPAS_LISTA.filter(function(l){ return mapa[l]>0; })
+      .map(function(l){ return [l, mapa[l]]; });
+    if(otros) filas.push([SIN_ETAPA, otros]);
+    var maxE = filas.reduce(function(m,f){ return Math.max(m,f[1]); },0);
+    var top = filas.slice().sort(function(a,b){ return b[1]-a[1]; })[0];
+    var p4 = filas.map(function(f){ return barra(f[0], f[1], maxE, ""); }).join("");
+    var c4 = top ? 'La mayor concentración está en <b>'+esc(top[0])+'</b>, con <b>'+top[1]+'</b> órdenes de '+T+'.' : "";
+
+    /* --- 5. Antigüedad en planta (solo si hay fechas de ingreso) --- */
+    var b1=0,b2=0,b3=0,b4=0, conIng=0, viejo=null;
+    lista.forEach(function(o){
+      if(tipoDe(o)==="finalizado") return;
+      var d = diasDesde(o.fechaIngreso);
+      if(d===null) return;
+      conIng++;
+      if(!viejo || d>viejo.d) viejo = {d:d, ran:o.ran};
+      if(d<=15) b1++; else if(d<=30) b2++; else if(d<=60) b3++; else b4++;
+    });
+    var p5="", c5="";
+    if(conIng){
+      var mx1 = Math.max(b1,b2,b3,b4,1);
+      p5 = barra("Hasta 15 días", b1, mx1, "c-fin")
+         + barra("16 a 30 días", b2, mx1, "")
+         + barra("31 a 60 días", b3, mx1, "c-cliente")
+         + barra("Más de 60 días", b4, mx1, "c-red");
+      c5 = viejo ? 'El equipo con más permanencia es la <b>RAN '+esc(viejo.ran)+'</b>, con <b>'+viejo.d+' días</b> en planta.' : "";
+      if(b3+b4) c5 += ' <b>'+(b3+b4)+'</b> equipo'+(b3+b4===1?"":"s")+' supera'+(b3+b4===1?"":"n")+' el mes en el taller.';
+    }
+
+    /* --- 6. Antigüedad de los aportes pendientes --- */
+    var a1=0,a2=0,a3=0,a4=0, conFA=0, viejoAp=null;
+    lista.forEach(function(o){
+      if(!(o.aporte||"").trim()) return;
+      var d = diasDesde(o.fechaAporte);
+      if(d===null) return;
+      conFA++;
+      if(!viejoAp || d>viejoAp.d) viejoAp = {d:d, ran:o.ran};
+      if(d<=7) a1++; else if(d<=15) a2++; else if(d<=30) a3++; else a4++;
+    });
+    var p6="", c6="";
+    if(conFA){
+      var mx2 = Math.max(a1,a2,a3,a4,1);
+      p6 = barra("Hasta 7 días", a1, mx2, "c-fin")
+         + barra("8 a 15 días", a2, mx2, "")
+         + barra("16 a 30 días", a3, mx2, "c-cliente")
+         + barra("Más de 30 días", a4, mx2, "c-red");
+      c6 = a4
+        ? '<b>'+a4+' equipo'+(a4===1?"":"s")+'</b> lleva'+(a4===1?"":"n")+' más de 30 días detenido esperando aportes del cliente'
+          + (viejoAp ? '; el más antiguo es la <b>RAN '+esc(viejoAp.ran)+'</b> con <b>'+viejoAp.d+' días</b>.' : '.')
+        : 'Ningún aporte pendiente supera los 30 días de antigüedad.';
+    }
+
+    /* --- 7. Cumplimiento de plazo (reprogramaciones) --- */
+    var sinCambio=0, repro=0, sumaDesv=0, peor=null;
+    lista.forEach(function(o){
+      if(!o.fechaOriginal) return;
+      if(o.fechaOriginal===o.fecha){ sinCambio++; return; }
+      var d = diasEntre(o.fechaOriginal, o.fecha);
+      if(d===null) return;
+      repro++; sumaDesv += d;
+      if(!peor || d>peor.d) peor = {d:d, ran:o.ran};
+    });
+    var p7="", c7="";
+    if(sinCambio+repro){
+      var mx3 = Math.max(sinCambio,repro,1);
+      p7 = barra("Mantiene fecha original", sinCambio, mx3, "c-fin")
+         + barra("Reprogramada", repro, mx3, "c-red");
+      c7 = repro
+        ? '<b>'+repro+' de '+(sinCambio+repro)+'</b> órdenes se reprogramaron, con un desplazamiento promedio de <b>'
+          + Math.round(sumaDesv/repro)+' días</b>'
+          + (peor ? '; la mayor es la <b>RAN '+esc(peor.ran)+'</b> con '+peor.d+' días.' : '.')
+        : 'Todas las órdenes mantienen su fecha comprometida original.';
+    }
+
+    /* --- 8. Visitas de ITO --- */
+    var ito = {}, totIto = 0;
+    ITO_ESTADOS.forEach(function(x){ ito[x]=0; });
+    lista.forEach(function(o){
+      var e = (o.itoEstado||"").trim();
+      if(!e || ito[e]===undefined) return;
+      ito[e]++; totIto++;
+    });
+    var p8="", c8="";
+    if(totIto){
+      var mx4 = Math.max(ito["No solicitada"],ito["Solicitada"],ito["Confirmada"],ito["Realizada"],1);
+      p8 = barra("No solicitada", ito["No solicitada"], mx4, "c-red")
+         + barra("Solicitada", ito["Solicitada"], mx4, "c-cliente")
+         + barra("Confirmada", ito["Confirmada"], mx4, "")
+         + barra("Realizada", ito["Realizada"], mx4, "c-fin");
+      var sinAgendar = ito["No solicitada"] + ito["Solicitada"];
+      c8 = sinAgendar
+        ? '<b>'+sinAgendar+' visita'+(sinAgendar===1?"":"s")+'</b> de ITO sin confirmar: hasta agendarlas, esos equipos no pueden avanzar de etapa.'
+        : 'Todas las visitas de ITO comprometidas están confirmadas o realizadas.';
+    }
+
+    return '<section class="resumen r-'+(fase||"general")+'">'
+      + '<div class="resumen-head"><h2>Resumen ejecutivo'+(titulo? ' · '+esc(titulo) : "")+'</h2>'
+      + '<span class="sub">'+T+(T===1?" orden analizada":" órdenes analizadas")+'</span></div>'
+      + '<div class="paneles">'
+        + panel("Qué detiene el avance", p1, c1)
+        + panel("Aportes de cliente pendientes, por familia", p2, c2)
+        + panel("Compromisos según fecha de corte", p3, c3)
+        + panel("Distribución por etapa del proceso", p4, c4)
+        + (p5 ? panel("Antigüedad en planta", p5, c5) : "")
+        + (p6 ? panel("Antigüedad de los aportes pendientes", p6, c6) : "")
+        + (p7 ? panel("Cumplimiento de plazo comprometido", p7, c7) : "")
+        + (p8 ? panel("Visitas de ITO", p8, c8) : "")
+      + '</div></section>';
+  }
+
+  /* ---------- render ---------- */
+  function render(){
+    var cl = R.clientes||[];
+    var tot=0, ens=0, des=0, apo=0, fin=0, itoCli=0, vis={};
+    cl.forEach(function(c){
+      if(c.ito) itoCli++;
+      (c.ordenes||[]).forEach(function(o){
+        if(!edit && !pasaFiltro(o,c)) return;
+        tot++; vis[c.cliente]=1;
+        if(faseDe(o)==="desarme") des++; else ens++;
+        if((o.aporte||"").trim()) apo++;
+        if(tipoDe(o)==="finalizado") fin++;
+      });
+    });
+    var kpi=function(cls,n,t){ return '<div class="kpi '+cls+'"><div class="n">'+n+'</div><div class="t">'+t+'</div></div>'; };
+
+    app.innerHTML = '<div class="sheet"><header class="head"><div class="head-title">'
+      + '<div class="eyebrow">'+(edit? inp("empresa",R.empresa,{ph:"Empresa"}) : esc(R.empresa))+'</div>'
+      + (edit ? inp("titulo",R.titulo,{ph:"Título"}) : '<h1>'+esc(R.titulo)+'</h1>')
+      + '<div class="head-month">'+(edit? inp("periodo",R.periodo,{ph:"Período"}) : esc(R.periodo))+'</div>'
+      + '<div class="head-sub">'+(edit? inp("area",R.area,{ph:"Área"}) : esc(R.area))+'</div>'
+      + '</div><div class="head-meta">'
+      + 'Fecha de corte: '+(edit? inp("fechaCorte",R.fechaCorte,{ph:"dd-mm-aaaa",cls:"mono"}) : '<b>'+esc(R.fechaCorte)+'</b>')+'<br>'
+      + 'Órdenes informadas: <b>'+tot+'</b><br>Clientes: <b>'+Object.keys(vis).length+'</b></div></header>'
+      + '<div class="kpis">'
+        + kpi("",ens,"En ensamble")
+        + kpi("k-des",des,"En desarme y evaluación")
+        + kpi("k-cliente",apo,"Con aportes de cliente")
+        + kpi("k-ito",itoCli,"Clientes con ITO")
+        + kpi("k-fin",fin,"Listos o despachados")
+      + '</div>'
+      + '<div class="filtroaviso'+(hayFiltro()&&!edit?" show":"")+'">Vista filtrada: el reporte muestra solo las órdenes que cumplen los filtros seleccionados.</div>'
+      + seccion("ensamble","Equipos en ensamble","🔧")
+      + seccion("desarme","Equipos en desarme y evaluación","🔍")
+      + '<section class="closing"><div class="sign">'
+        + (edit ? inp("firma.nombre",(R.firma||{}).nombre,{ph:"Nombre"}) : '<b>'+esc((R.firma||{}).nombre)+'</b>')
+        + (edit ? inp("firma.cargo",(R.firma||{}).cargo,{ph:"Cargo"}) : '<span>'+esc((R.firma||{}).cargo)+'</span>')
+      + '</div><div class="leyenda">'
+        + '<span><i style="background:#2C6C8C"></i>En proceso</span>'
+        + '<span><i style="background:#B36A12"></i>Espera de aporte o confirmación de cliente</span>'
+        + '<span><i style="background:#5B4B8A"></i>Espera de visita de ITO</span>'
+        + '<span><i style="background:#2C6650"></i>Listo para despacho o despachado</span>'
+      + '</div></section></div>';
+
+    ajustarAreas();
+    if(focoPendiente){
+      var f = app.querySelector('[data-f="'+focoPendiente+'"]');
+      if(f){ f.focus(); f.scrollIntoView({block:"center"}); }
+      focoPendiente = null;
+    }
+  }
+
+  function ajustarAreas(){
+    var ta = app.querySelectorAll("textarea.grow");
+    for(var i=0;i<ta.length;i++){ ta[i].style.height="auto"; ta[i].style.height=(ta[i].scrollHeight+2)+"px"; }
+  }
+  function setVal(path, val){
+    var partes = path.split("."), o = R;
+    for(var i=0;i<partes.length-1;i++) o = o[partes[i]];
+    o[partes[partes.length-1]] = val;
+  }
+  function getObj(path){
+    var partes = path.split("."), o = R;
+    for(var i=0;i<partes.length-1;i++) o = o[partes[i]];
+    return o;
+  }
+  function ordenNueva(fase){
+    var f = fase==="desarme" ? "desarme" : "ensamble";
+    var est = f==="desarme" ? "Equipo recepcionado" : "En programación";
+    var e = buscarEstado(est);
+    return { orden:"", ran:"", modelo:"", ns:"", fecha:"", fechaOriginal:"", fechaIngreso:"",
+             fechaAporte:"", flag:"", fase:f, tipo:e?e.t:"proceso", estado:est,
+             detalle:"", aporte:"", responsable:"Taller de producción", obs:"",
+             itoEstado:"", itoFecha:"" };
+  }
+  function normalizar(){
+    if(!Array.isArray(R.estados)) R.estados = [];
+    if(!Array.isArray(R.catalogoClientes)) R.catalogoClientes = [];
+    if(!R.coloresEstado || typeof R.coloresEstado!=="object") R.coloresEstado = {};
+    if(typeof R.resumen!=="boolean") R.resumen = true;
+    if(!R.etapasEstado || typeof R.etapasEstado!=="object") R.etapasEstado = {};
+    if(!Array.isArray(R.familias)) R.familias = [];
+    var n = R.nube || {};
+    R.nube = { url:n.url!==undefined?n.url:NUBE_DEF.url, key:n.key!==undefined?n.key:NUBE_DEF.key,
+               tabla:n.tabla||NUBE_DEF.tabla, columna:n.columna||NUBE_DEF.columna,
+               fila:n.fila||NUBE_DEF.fila, auto:n.auto!==false };
+    (R.clientes||[]).forEach(function(c){
+      c.ito = !!c.ito;
+      if(typeof c.itoNota!=="string") c.itoNota = "";
+      (c.ordenes||[]).forEach(function(o){
+        ["orden","ran","modelo","ns","fecha","fechaOriginal","fechaIngreso","fechaAporte",
+         "flag","estado","detalle","aporte","responsable","obs","itoEstado","itoFecha"]
+          .forEach(function(k){ if(typeof o[k]!=="string") o[k] = o[k]==null?"":String(o[k]); });
+        o.fase = faseDe(o);            /* sección propia de la orden */
+        o.tipo = tipoDe(o);            /* color derivado del estado */
+      });
+    });
+  }
+  normalizar();
+
+  /* ---------- captura ---------- */
+  app.addEventListener("input", function(e){
+    var t = e.target;
+    if(!t.hasAttribute || !t.hasAttribute("data-f")) return;
+    setVal(t.getAttribute("data-f"), t.value);
+    if(t.tagName==="TEXTAREA"){ t.style.height="auto"; t.style.height=(t.scrollHeight+2)+"px"; }
+    cambio();
+  });
+
+  app.addEventListener("change", function(e){
+    var t = e.target;
+    if(t.classList.contains("dpick")){
+      if(!t.value) return;
+      var p = t.value.split("-"), texto = p[2]+"-"+p[1]+"-"+p[0];
+      var destino = t.getAttribute("data-target");
+      var campo = app.querySelector('[data-f="'+destino+'"]');
+      if(campo) campo.value = texto;
+      setVal(destino, texto); t.value=""; snap(); cambio(); return;
+    }
+    if(t.tagName==="SELECT" && t.hasAttribute("data-f")){
+      var path = t.getAttribute("data-f");
+      if(t.hasAttribute("data-estado")){
+        if(t.value==="__nuevo__"){
+          var nombre = prompt("Nombre del nuevo estado:");
+          if(!nombre){ render(); return; }
+          nombre = nombre.trim();
+          if(!buscarEstado(nombre)){
+            snap();
+            R.estados.push({ n:nombre, t:"proceso", propio:true });
+            toast("Estado creado. Asígnale color y etapa en 📋 Estados");
+          }
+          setVal(path, nombre); aplicarEstado(path); render(); cambio(); return;
+        }
+        snap(); setVal(path, t.value); aplicarEstado(path); render(); cambio(); return;
+      }
+      snap(); setVal(path, t.value); cambio(); render();
+    }
+  });
+
+  /* el color de la fila se recalcula solo a partir del estado */
+  function aplicarEstado(path){
+    var o = getObj(path);
+    o.tipo = tipoDe(o);
+  }
+
+  /* ---------- botones del reporte ---------- */
+  app.addEventListener("click", function(e){
+    var b = e.target.closest("button");
+    if(!b || b.disabled) return;
+    var ci = b.getAttribute("data-ci"), oi = b.getAttribute("data-oi");
+
+    if(b.hasAttribute("data-ito")){
+      snap(); R.clientes[ci].ito = !R.clientes[ci].ito; render(); cambio(); return;
+    }
+    if(b.hasAttribute("data-mover")){
+      snap();
+      var d = parseInt(b.getAttribute("data-mover"),10);
+      var arr = R.clientes[ci].ordenes, i = parseInt(oi,10);
+      var mv = arr.splice(i,1)[0]; arr.splice(i+d,0,mv);
+      render(); cambio(); return;
+    }
+    if(b.hasAttribute("data-dup")){
+      snap();
+      var copia = JSON.parse(JSON.stringify(R.clientes[ci].ordenes[oi]));
+      R.clientes[ci].ordenes.splice(parseInt(oi,10)+1,0,copia);
+      focoPendiente = "clientes."+ci+".ordenes."+(parseInt(oi,10)+1)+".orden";
+      render(); cambio(); return;
+    }
+    if(b.hasAttribute("data-del-orden")){
+      var o = R.clientes[ci].ordenes[oi];
+      if(confirm("¿Eliminar la orden "+(o.orden||"(sin número)")+" / RAN "+(o.ran||"—")+"?")){
+        snap(); R.clientes[ci].ordenes.splice(oi,1); render(); cambio();
+      }
+      return;
+    }
+    if(b.hasAttribute("data-add-orden")){
+      snap();
+      R.clientes[ci].ordenes.push(ordenNueva(b.getAttribute("data-fase")||"ensamble"));
+      focoPendiente = "clientes."+ci+".ordenes."+(R.clientes[ci].ordenes.length-1)+".orden";
+      render(); cambio(); return;
+    }
+    if(b.hasAttribute("data-del-cliente")){
+      if(confirm("¿Eliminar el cliente "+R.clientes[ci].cliente+" y todas sus órdenes?")){
+        snap(); R.clientes.splice(ci,1); render(); cambio(); llenarFiltroClientes();
+      }
+      return;
+    }
+    if(b.hasAttribute("data-abrir-clientes")){ abrirClientes(b.getAttribute("data-fase")||"ensamble"); return; }
+  });
+
+  /* ---------- filtros ---------- */
+  function llenarFiltroClientes(){
+    var s = document.getElementById("fCliente"), v = s.value;
+    s.innerHTML = '<option value="">Todos</option>'
+      + (R.clientes||[]).map(function(c){ return '<option value="'+esc(c.cliente)+'">'+esc(c.cliente)+'</option>'; }).join("");
+    s.value = v;
+    if(s.value!==v){ s.value=""; FILTRO.cliente=""; }
+    var dl = document.getElementById("dl-clientes");
+    if(dl) dl.innerHTML = catClientes().map(function(n){ return '<option value="'+esc(n)+'"></option>'; }).join("");
+  }
+  var tBuscar=null;
+  document.getElementById("fBuscar").addEventListener("input", function(){
+    var v=this.value; clearTimeout(tBuscar);
+    tBuscar=setTimeout(function(){ FILTRO.q=v; render(); }, 220);
+  });
+  document.getElementById("fCliente").addEventListener("change", function(){ FILTRO.cliente=this.value; render(); });
+  document.getElementById("fFase").addEventListener("change", function(){ FILTRO.fase=this.value; render(); });
+  document.getElementById("fAporte").addEventListener("click", function(){
+    FILTRO.aporte=!FILTRO.aporte; this.classList.toggle("on",FILTRO.aporte); render(); });
+  document.getElementById("fIto").addEventListener("click", function(){
+    FILTRO.ito=!FILTRO.ito; this.classList.toggle("on",FILTRO.ito); render(); });
+  document.getElementById("fLimpiar").addEventListener("click", function(){
+    FILTRO={q:"",cliente:"",fase:"",aporte:false,ito:false};
+    document.getElementById("fBuscar").value="";
+    document.getElementById("fCliente").value="";
+    document.getElementById("fFase").value="";
+    document.getElementById("fAporte").classList.remove("on");
+    document.getElementById("fIto").classList.remove("on");
+    render();
+  });
+
+  /* ---------- catálogo de estados ---------- */
+  var COLORES = [["proceso","En proceso"],["cliente","Espera de cliente"],
+                 ["ito","Espera de ITO"],["finalizado","Finalizado"]];
+  function opcionesEtapa(sel){
+    return ETAPAS_LISTA.concat([SIN_ETAPA]).map(function(l){
+      return '<option value="'+esc(l)+'"'+(l===sel?" selected":"")+'>'+esc(l)+'</option>'; }).join("");
+  }
+  function pintarEstados(){
+    document.getElementById("listaEstados").innerHTML = catEstados().map(function(e){
+      var propio = ESTADOS_BASE.indexOf(e)<0;
+      var col = (R.coloresEstado||{})[e.n] || e.t;
+      var et  = etapaDe(e.n);
+      return '<div class="it"><span style="flex:1 1 auto">'+esc(e.n)+'</span>'
+        + '<select class="f sm" style="width:132px;flex:none" data-color-estado="'+esc(e.n)+'">'
+        + COLORES.map(function(c){ return '<option value="'+c[0]+'"'+(c[0]===col?" selected":"")+'>'+c[1]+'</option>'; }).join("")
+        + '</select>'
+        + '<select class="f sm" style="width:178px;flex:none" data-etapa-estado="'+esc(e.n)+'">'
+        + opcionesEtapa(et)
+        + '</select>'
+        + (propio ? '<button type="button" class="mini" data-del-estado="'+esc(e.n)+'">✕</button>'
+                  : '<span class="prop" style="width:14px"></span>')
+        + '</div>';
+    }).join("");
+  }
+  document.getElementById("btnEstados").addEventListener("click", function(){
+    document.getElementById("nvEtapa").innerHTML = opcionesEtapa("Programación y ensamble");
+    pintarEstados(); document.getElementById("modalEstados").classList.add("show"); });
+  document.getElementById("cerrarEstados").addEventListener("click", function(){
+    document.getElementById("modalEstados").classList.remove("show"); });
+  document.getElementById("modalEstados").addEventListener("change", function(e){
+    var col = e.target.closest("select[data-color-estado]");
+    if(col){
+      snap(); R.coloresEstado[col.getAttribute("data-color-estado")] = col.value;
+      render(); cambio(); return;
+    }
+    var et = e.target.closest("select[data-etapa-estado]");
+    if(et){
+      snap(); R.etapasEstado[et.getAttribute("data-etapa-estado")] = et.value;
+      render(); cambio();
+    }
+  });
+  document.getElementById("modalEstados").addEventListener("click", function(e){
+    if(e.target===this) this.classList.remove("show");
+    var b = e.target.closest("button[data-del-estado]");
+    if(b){
+      var n = b.getAttribute("data-del-estado"), usado=0;
+      (R.clientes||[]).forEach(function(c){ (c.ordenes||[]).forEach(function(o){ if(o.estado===n) usado++; }); });
+      if(usado && !confirm("El estado \""+n+"\" está usado en "+usado+" orden(es). ¿Eliminarlo igual?")) return;
+      snap(); R.estados = (R.estados||[]).filter(function(x){ return x.n!==n; });
+      pintarEstados(); render(); cambio();
+    }
+  });
+  document.getElementById("nvAgregar").addEventListener("click", function(){
+    var n = document.getElementById("nvNombre").value.trim();
+    if(!n){ toast("Escribe el nombre del estado"); return; }
+    if(buscarEstado(n)){ toast("Ese estado ya existe"); return; }
+    snap();
+    R.estados.push({ n:n, t:document.getElementById("nvTipo").value, propio:true });
+    R.etapasEstado[n] = document.getElementById("nvEtapa").value;
+    document.getElementById("nvNombre").value="";
+    pintarEstados(); render(); cambio(); toast("Estado agregado");
+  });
+
+  /* ---------- familias de aportes ---------- */
+  function materializarFamilias(){
+    if(!R.familias || !R.familias.length) R.familias = JSON.parse(JSON.stringify(FAMILIAS_BASE));
+  }
+  function pintarFamilias(){
+    document.getElementById("listaFamilias").innerHTML = familias().map(function(f,i){
+      return '<div class="it">'
+        + '<input class="f sm" style="width:170px;flex:none" data-fam-lab="'+i+'" value="'+esc(f.lab)+'">'
+        + '<input class="f sm" style="flex:1 1 auto" data-fam-claves="'+i+'" value="'+esc((f.claves||[]).join(", "))+'">'
+        + '<button type="button" class="mini" data-del-fam="'+i+'" title="Eliminar familia">✕</button>'
+        + '</div>';
+    }).join("");
+  }
+  document.getElementById("btnFamilias").addEventListener("click", function(){
+    pintarFamilias(); document.getElementById("modalFamilias").classList.add("show"); });
+  document.getElementById("cerrarFamilias").addEventListener("click", function(){
+    document.getElementById("modalFamilias").classList.remove("show"); });
+  document.getElementById("modalFamilias").addEventListener("input", function(e){
+    var t = e.target, i;
+    if(t.hasAttribute("data-fam-lab")){
+      materializarFamilias(); i = +t.getAttribute("data-fam-lab");
+      R.familias[i].lab = t.value; render(); cambio(); return;
+    }
+    if(t.hasAttribute("data-fam-claves")){
+      materializarFamilias(); i = +t.getAttribute("data-fam-claves");
+      R.familias[i].claves = t.value.split(",").map(function(x){ return x.trim(); })
+        .filter(function(x){ return x; });
+      render(); cambio();
+    }
+  });
+  document.getElementById("modalFamilias").addEventListener("click", function(e){
+    if(e.target===this){ this.classList.remove("show"); return; }
+    var b = e.target.closest("button[data-del-fam]");
+    if(!b) return;
+    materializarFamilias(); snap();
+    R.familias.splice(+b.getAttribute("data-del-fam"),1);
+    pintarFamilias(); render(); cambio();
+  });
+  document.getElementById("nvFamAdd").addEventListener("click", function(){
+    var lab = document.getElementById("nvFamLab").value.trim();
+    var cl  = document.getElementById("nvFamClaves").value.split(",")
+              .map(function(x){ return x.trim(); }).filter(function(x){ return x; });
+    if(!lab){ toast("Escribe el nombre de la familia"); return; }
+    if(!cl.length) cl = [lab.toLowerCase()];
+    materializarFamilias(); snap();
+    R.familias.push({ lab:lab, claves:cl });
+    document.getElementById("nvFamLab").value=""; document.getElementById("nvFamClaves").value="";
+    pintarFamilias(); render(); cambio(); toast("Familia agregada");
+  });
+  document.getElementById("restaurarFamilias").addEventListener("click", function(){
+    if(!confirm("¿Restaurar la lista original de familias y perder los cambios?")) return;
+    snap(); R.familias = [];
+    pintarFamilias(); render(); cambio(); toast("Lista original restaurada");
+  });
+
+  /* ---------- cartera de clientes ---------- */
+  var faseDestino = "ensamble";
+  function nombreFase(f){ return f==="desarme" ? "desarme y evaluación" : "ensamble"; }
+
+  function pintarClientes(){
+    document.getElementById("clientesFase").value = faseDestino;
+    document.getElementById("clientesDestino").textContent = nombreFase(faseDestino).toUpperCase();
+    document.getElementById("listaClientes").innerHTML = catClientes().map(function(n){
+      var ya = clienteEnReporte(n);
+      return '<div class="it"><span>'+esc(n)+'</span>'
+        + (ya ? '<span class="ya">✔ ya en el reporte</span>' : '<span style="margin-left:auto"></span>')
+        + '<button type="button" class="mini" data-add-cli="'+esc(n)+'">'
+        + (ya ? "+ Orden" : "Agregar") + '</button></div>';
+    }).join("");
+  }
+  function abrirClientes(fase){
+    faseDestino = fase==="desarme" ? "desarme" : "ensamble";
+    pintarClientes();
+    document.getElementById("modalClientes").classList.add("show");
+  }
+  document.getElementById("btnClientes").addEventListener("click", function(){ abrirClientes(faseDestino); });
+  document.getElementById("clientesFase").addEventListener("change", function(){
+    faseDestino = this.value; pintarClientes();
+  });
+  document.getElementById("cerrarClientes").addEventListener("click", function(){
+    document.getElementById("modalClientes").classList.remove("show"); });
+  document.getElementById("modalClientes").addEventListener("click", function(e){
+    if(e.target===this) this.classList.remove("show");
+    var b = e.target.closest("button[data-add-cli]");
+    if(!b) return;
+    var n = b.getAttribute("data-add-cli"), idx = -1;
+    (R.clientes||[]).forEach(function(c,i){
+      if(String(c.cliente||"").toUpperCase().trim()===n.toUpperCase().trim()) idx=i; });
+    snap();
+    if(idx<0){
+      R.clientes.push({ cliente:n, ito:false, itoNota:"", ordenes:[ordenNueva(faseDestino)] });
+      idx = R.clientes.length-1;
+      focoPendiente = "clientes."+idx+".ordenes.0.orden";
+      toast(n+" agregado a "+nombreFase(faseDestino));
+    } else {
+      R.clientes[idx].ordenes.push(ordenNueva(faseDestino));
+      focoPendiente = "clientes."+idx+".ordenes."+(R.clientes[idx].ordenes.length-1)+".orden";
+      toast("Nueva orden de "+n+" en "+nombreFase(faseDestino));
+    }
+    if(!edit){ edit=true; document.body.classList.add("edit");
+      var be=document.getElementById("btnEdit"); be.classList.add("on"); be.innerHTML="✔️ Terminar edición"; }
+    pintarClientes(); render(); cambio(); llenarFiltroClientes();
+  });
+  document.getElementById("nvClienteAdd").addEventListener("click", function(){
+    var n = document.getElementById("nvCliente").value.trim();
+    if(!n){ toast("Escribe el nombre del cliente"); return; }
+    if(catClientes().some(function(x){ return x.toUpperCase()===n.toUpperCase(); })){
+      toast("Ese cliente ya está en la cartera"); return; }
+    snap(); R.catalogoClientes.push(n);
+    document.getElementById("nvCliente").value="";
+    pintarClientes(); cambio(); llenarFiltroClientes(); toast("Cliente agregado a la cartera");
+  });
+
+  /* ================= GUARDADO EN LA NUBE (Supabase) =================
+     Los datos viven en una fila de una tabla. El archivo HTML solo trae la
+     configuración de conexión; se publica una vez y no se toca más. */
+  var selloNube = null;   /* marca de tiempo de lo último traído de la nube */
+
+  function nubeOk(){
+    var n = R.nube||{};
+    return !!(n.url && n.key && n.tabla && n.fila);
+  }
+  function nubeHead(extra){
+    var h = { apikey:R.nube.key, Authorization:"Bearer "+R.nube.key, "Content-Type":"application/json" };
+    if(extra) Object.keys(extra).forEach(function(k){ h[k]=extra[k]; });
+    return h;
+  }
+  function nubeUrlFila(){
+    return R.nube.url.replace(/\/+$/,"") + "/rest/v1/" + encodeURIComponent(R.nube.tabla)
+      + "?id=eq." + encodeURIComponent(R.nube.fila) + "&select=*";
+  }
+  function marcarNube(txt, err){
+    var e = document.getElementById("nubeEstado");
+    e.textContent = txt || "";
+    e.style.color = err ? "#FFC9C6" : "#9FC4D6";
+  }
+  function fechaCorta(iso){
+    var d = new Date(iso);
+    if(isNaN(d.getTime())) return "";
+    return ("0"+d.getDate()).slice(-2)+"-"+("0"+(d.getMonth()+1)).slice(-2)+" "
+      + ("0"+d.getHours()).slice(-2)+":"+("0"+d.getMinutes()).slice(-2);
+  }
+  /* extrae el contenido de la fila, detectando la columna si hiciera falta */
+  function leerFila(row){
+    var col = R.nube.columna, val = row[col];
+    if(val===undefined || val===null){
+      var k = Object.keys(row).filter(function(k){
+        if(k==="id") return false;
+        var v = row[k];
+        return v && (typeof v==="object" || (typeof v==="string" && v.trim().charAt(0)==="{"));
+      })[0];
+      if(k){ col = k; R.nube.columna = k; val = row[k]; }
+    }
+    if(typeof val==="string") val = JSON.parse(val);
+    return val;
+  }
+
+  function cargarNube(silencioso){
+    if(!nubeOk()){ if(!silencioso) toast("Falta configurar la nube (botón ⚙️)"); return; }
+    marcarNube("Cargando nube…");
+    fetch(nubeUrlFila(), { headers: nubeHead(), cache:"no-store" })
+      .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
+      .then(function(rows){
+        if(!rows || !rows.length){
+          marcarNube("Nube sin datos");
+          if(!silencioso) toast("La nube todavía no tiene un reporte guardado");
+          return;
+        }
+        var datos = leerFila(rows[0]);
+        if(!datos || !datos.clientes) throw new Error("La fila no contiene un reporte válido");
+        var cfg = R.nube;
+        R = datos; R.nube = cfg;              /* la configuración es la del archivo */
+        normalizar(); ultimo = JSON.stringify(R); hist = [];
+        selloNube = R._guardado || null;
+        try{ localStorage.setItem(LSNUBE, JSON.stringify(datos)); }catch(e){}
+        render(); llenarFiltroClientes();
+        marcarNube("Nube " + (selloNube ? fechaCorta(selloNube) : "cargada"));
+        toast("Datos cargados desde la nube" + (selloNube ? " · guardado "+fechaCorta(selloNube) : ""));
+        var av = document.getElementById("aviso");
+        if(av && borradorFecha && selloNube && new Date(selloNube) >= new Date(borradorFecha))
+          av.classList.remove("show");
+      })
+      .catch(function(e){
+        /* sin señal: se muestra la última copia traída de la nube en este equipo */
+        var copia = null;
+        try{ copia = JSON.parse(localStorage.getItem(LSNUBE)||"null"); }catch(x){}
+        if(copia && copia.clientes){
+          var cfg2 = R.nube;
+          R = copia; R.nube = cfg2;
+          normalizar(); ultimo = JSON.stringify(R); hist = [];
+          selloNube = R._guardado || null;
+          render(); llenarFiltroClientes();
+          marcarNube("Sin conexión · copia del " + (selloNube ? fechaCorta(selloNube) : "equipo"), true);
+          if(!silencioso) alert("No hay conexión con la nube.\n\nSe muestra la última copia guardada en este "
+            + "equipo" + (selloNube ? " (" + fechaCorta(selloNube) + ")" : "")
+            + ".\n\nPuedes revisar el reporte, pero no guardar hasta recuperar la señal.");
+          return;
+        }
+        marcarNube("Nube: sin conexión", true);
+        if(!silencioso) alert("No se pudo cargar desde la nube.\n\n"+e.message
+          + "\n\nRevisa la configuración con el botón ⚙️.");
+      });
+  }
+
+  function guardarNube(){
+    if(!nubeOk()){ toast("Falta configurar la nube (botón ⚙️)"); return; }
+    marcarNube("Guardando en la nube…");
+    /* anti-sobreescritura: si alguien guardó después de lo que trajimos, se avisa */
+    fetch(nubeUrlFila(), { headers: nubeHead(), cache:"no-store" })
+      .then(function(r){ return r.ok ? r.json() : []; })
+      .then(function(rows){
+        if(rows && rows.length){
+          var remoto = null;
+          try{ remoto = leerFila(rows[0]); }catch(e){}
+          if(remoto && remoto._guardado && selloNube && new Date(remoto._guardado) > new Date(selloNube)){
+            if(!confirm("La nube tiene una versión más nueva, guardada el "
+              + fechaCorta(remoto._guardado) + ".\n\nSi continúas, se reemplazará con lo que tienes en pantalla."
+              + "\n\n¿Deseas continuar?")){
+              marcarNube("Guardado cancelado", true);
+              throw new Error("cancelado");
+            }
+          }
+        }
+        R._guardado = new Date().toISOString();
+        var cuerpo = {}; cuerpo.id = R.nube.fila; cuerpo[R.nube.columna] = R;
+        return fetch(R.nube.url.replace(/\/+$/,"") + "/rest/v1/" + encodeURIComponent(R.nube.tabla),
+          { method:"POST",
+            headers: nubeHead({ Prefer:"resolution=merge-duplicates,return=minimal" }),
+            body: JSON.stringify([cuerpo]) });
+      })
+      .then(function(r){
+        if(!r) return;
+        if(!r.ok) return r.text().then(function(t){ throw new Error("HTTP "+r.status+" · "+t.slice(0,140)); });
+        selloNube = R._guardado;
+        try{ localStorage.setItem(LSNUBE, JSON.stringify(R)); }catch(e){}
+        dirty = false;
+        try{ localStorage.removeItem(LSKEY); }catch(e){}
+        marcarNube("Nube " + fechaCorta(selloNube));
+        toast("Guardado en la nube");
+      })
+      .catch(function(e){
+        if(e && e.message==="cancelado") return;
+        marcarNube("Nube: error al guardar", true);
+        alert("No se pudo guardar en la nube.\n\n"+(e&&e.message||e)
+          + "\n\nTus datos siguen en pantalla: puedes usar 💾 Guardar archivo como respaldo.");
+      });
+  }
+
+  /* ---- configuración ---- */
+  function abrirCfg(){
+    document.getElementById("cfgUrl").value   = R.nube.url||"";
+    document.getElementById("cfgKey").value   = R.nube.key||"";
+    document.getElementById("cfgTabla").value = R.nube.tabla||"";
+    document.getElementById("cfgCol").value   = R.nube.columna||"";
+    document.getElementById("cfgFila").value  = R.nube.fila||"";
+    document.getElementById("cfgAuto").checked = R.nube.auto!==false;
+    document.getElementById("cfgMsg").innerHTML = "";
+    document.getElementById("modalNube").classList.add("show");
+  }
+  function tomarCfg(){
+    R.nube.url     = document.getElementById("cfgUrl").value.trim();
+    R.nube.key     = document.getElementById("cfgKey").value.trim();
+    R.nube.tabla   = document.getElementById("cfgTabla").value.trim() || "pie_data";
+    R.nube.columna = document.getElementById("cfgCol").value.trim() || "data";
+    R.nube.fila    = document.getElementById("cfgFila").value.trim() || "reporte_ran";
+    R.nube.auto    = document.getElementById("cfgAuto").checked;
+  }
+  document.getElementById("btnNubeCfg").addEventListener("click", abrirCfg);
+  document.getElementById("cerrarNube").addEventListener("click", function(){
+    document.getElementById("modalNube").classList.remove("show"); });
+  document.getElementById("cfgGuardar").addEventListener("click", function(){
+    snap(); tomarCfg(); cambio();
+    document.getElementById("cfgMsg").innerHTML = '<span class="ok">Configuración guardada. '
+      + 'Recuerda descargar el archivo con 💾 para conservarla.</span>';
+  });
+  document.getElementById("cfgProbar").addEventListener("click", function(){
+    tomarCfg();
+    var m = document.getElementById("cfgMsg");
+    m.innerHTML = "Probando…";
+    fetch(nubeUrlFila(), { headers: nubeHead(), cache:"no-store" })
+      .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
+      .then(function(rows){
+        if(!rows.length){
+          m.innerHTML = '<span class="ok">Conexión correcta.</span> La tabla responde, pero la fila «'
+            + esc(R.nube.fila) + '» aún no existe: se creará la primera vez que uses ☁️ Guardar nube.';
+          return;
+        }
+        var d = null; try{ d = leerFila(rows[0]); }catch(e){}
+        m.innerHTML = d && d.clientes
+          ? '<span class="ok">Conexión correcta.</span> La fila tiene un reporte con '
+            + d.clientes.length + ' clientes' + (d._guardado ? ', guardado el '+fechaCorta(d._guardado) : '')
+            + '. Columna usada: <b>'+esc(R.nube.columna)+'</b>.'
+          : '<span class="err">La fila existe pero no contiene un reporte válido.</span> Revisa el nombre de la columna.';
+      })
+      .catch(function(e){
+        m.innerHTML = '<span class="err">No se pudo conectar:</span> '+esc(e.message)
+          + '. Revisa la URL, la clave y que la tabla permita lectura pública.';
+      });
+  });
+  document.getElementById("modalNube").addEventListener("click", function(e){
+    if(e.target===this) this.classList.remove("show"); });
+
+  document.getElementById("btnNubeGuardar").addEventListener("click", guardarNube);
+  document.getElementById("btnNubeCargar").addEventListener("click", function(){ cargarNube(false); });
+
+  /* ---------- barra ---------- */
+  document.getElementById("btnEdit").addEventListener("click", function(){
+    edit = !edit;
+    document.body.classList.toggle("edit", edit);
+    this.classList.toggle("on", edit);
+    this.innerHTML = edit ? "✔️ Terminar edición" : "✏️ Editar";
+    document.getElementById("hint").classList.remove("oculto");
+    render();
+    if(edit) toast("Modo edición activo — escribe en los casilleros");
+  });
+  (function(){
+    var b = document.getElementById("btnResumen");
+    if(R.resumen!==false) b.classList.add("on");
+    b.addEventListener("click", function(){
+      snap();
+      R.resumen = (R.resumen===false);
+      this.classList.toggle("on", R.resumen!==false);
+      render(); cambio();
+      toast(R.resumen===false ? "Resumen ejecutivo oculto" : "Resumen ejecutivo visible");
+    });
+  })();
+  document.getElementById("btnCerrarAyuda").addEventListener("click", function(){
+    document.getElementById("hint").classList.add("oculto"); });
+  document.getElementById("btnUndo").addEventListener("click", function(){
+    if(!hist.length){ toast("No hay nada que deshacer"); return; }
+    R = JSON.parse(hist.pop()); normalizar(); ultimo = JSON.stringify(R);
+    if(!hist.length) this.disabled = true;
+    render(); autoguardar(); llenarFiltroClientes(); toast("Último cambio deshecho");
+  });
+  document.getElementById("btnUndo").disabled = true;
+
+  /* ---------- PDF ---------- */
+  function imprimir(){
+    if(edit) document.getElementById("btnEdit").click();
+    setTimeout(function(){ window.print(); }, 200);
+  }
+  document.getElementById("btnPrint").addEventListener("click", function(){
+    var omitir=false;
+    try{ omitir = localStorage.getItem(LSPDF)==="1"; }catch(e){}
+    if(omitir){ imprimir(); return; }
+    document.getElementById("modalPdf").classList.add("show");
+  });
+  document.getElementById("pdfSeguir").addEventListener("click", function(){
+    if(document.getElementById("pdfNoMostrar").checked){
+      try{ localStorage.setItem(LSPDF,"1"); }catch(e){}
+    }
+    document.getElementById("modalPdf").classList.remove("show");
+    imprimir();
+  });
+  document.getElementById("pdfCancelar").addEventListener("click", function(){
+    document.getElementById("modalPdf").classList.remove("show"); });
+
+  /* ---------- guardar ---------- */
+  function guardarArchivo(){
+    var doc = document.documentElement.cloneNode(true);
+    doc.querySelector("#datos").textContent = "\n" + JSON.stringify(R, null, 2) + "\n";
+    doc.querySelector("#app").innerHTML = "";
+    doc.querySelector("body").className = "";
+    var q=function(s){ return doc.querySelector(s); };
+    if(q("#aviso")) q("#aviso").className="aviso";
+    if(q("#avisoTxt")) q("#avisoTxt").textContent="";
+    if(q("#hint")) q("#hint").className="hint";
+    if(q("#guardado")) q("#guardado").textContent="";
+    if(q("#toast")) q("#toast").textContent="";
+    ["#modalEstados","#modalClientes","#modalPdf","#modalFamilias"].forEach(function(s){ if(q(s)) q(s).className="modal"; });
+    if(q("#listaEstados")) q("#listaEstados").innerHTML="";
+    if(q("#listaClientes")) q("#listaClientes").innerHTML="";
+    if(q("#listaFamilias")) q("#listaFamilias").innerHTML="";
+    if(q("#nvEtapa")) q("#nvEtapa").innerHTML="";
+    if(q("#nubeEstado")) q("#nubeEstado").textContent="";
+    if(q("#modalNube")) q("#modalNube").className="modal";
+    if(q("#cfgMsg")) q("#cfgMsg").innerHTML="";
+    if(q("#btnEdit")){ q("#btnEdit").className=""; q("#btnEdit").innerHTML="✏️ Editar"; }
+    if(q("#btnResumen")) q("#btnResumen").className = (R.resumen===false ? "" : "on");
+    if(q("#fBuscar")) q("#fBuscar").setAttribute("value","");
+    if(q("#fAporte")) q("#fAporte").className="tog";
+    if(q("#fIto")) q("#fIto").className="tog";
+    if(q("#dl-clientes")) q("#dl-clientes").innerHTML="";
+
+    var html = "<!DOCTYPE html>\n" + doc.outerHTML;
+    var url = URL.createObjectURL(new Blob([html], {type:"text/html;charset=utf-8"}));
+    var a = document.createElement("a");
+    a.href=url; a.download="SUMITOMO_ANTOFAGASTA_Reporte_Estado_RAN.html";
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 1500);
+    dirty=false;
+    try{ localStorage.removeItem(LSKEY); }catch(e){}
+    marcar(""); toast("Archivo guardado en tu carpeta de Descargas");
+  }
+  document.getElementById("btnSave").addEventListener("click", guardarArchivo);
+  document.addEventListener("keydown", function(e){
+    if((e.ctrlKey||e.metaKey) && e.key.toLowerCase()==="s"){ e.preventDefault(); guardarArchivo(); }
+  });
+
+  window.addEventListener("beforeunload", function(e){
+    if(!dirty) return;
+    e.preventDefault(); e.returnValue="";
+  });
+
+  /* ---------- borrador guardado ---------- */
+  (function revisarBorrador(){
+    var raw; try{ raw = localStorage.getItem(LSKEY); }catch(e){ return; }
+    if(!raw) return;
+    var b; try{ b = JSON.parse(raw); }catch(e){ return; }
+    if(!b || !b.datos || JSON.stringify(b.datos)===ORIGINAL) return;
+    borradorFecha = b.fecha;
+    var f = new Date(b.fecha);
+    var txt = "Hay un borrador sin guardar del " + ("0"+f.getDate()).slice(-2) + "-"
+      + ("0"+(f.getMonth()+1)).slice(-2) + "-" + f.getFullYear() + " a las "
+      + ("0"+f.getHours()).slice(-2) + ":" + ("0"+f.getMinutes()).slice(-2) + ".";
+    document.getElementById("avisoTxt").innerHTML = "<b>"+txt+"</b> ¿Deseas recuperarlo?";
+    document.getElementById("aviso").classList.add("show");
+    document.getElementById("btnRestaurar").addEventListener("click", function(){
+      R = b.datos; normalizar(); ultimo = JSON.stringify(R);
+      document.getElementById("aviso").classList.remove("show");
+      render(); llenarFiltroClientes(); toast("Borrador restaurado");
+    });
+    document.getElementById("btnDescartar").addEventListener("click", function(){
+      try{ localStorage.removeItem(LSKEY); }catch(e){}
+      document.getElementById("aviso").classList.remove("show"); toast("Borrador descartado");
+    });
+  })();
+
+  llenarFiltroClientes();
+  render();
+
+  if(nubeOk() && R.nube.auto!==false) setTimeout(function(){ cargarNube(true); }, 250);
+
+  /* Aplicación instalable: solo se activa si la página está publicada (https) */
+  if("serviceWorker" in navigator && location.protocol!=="file:"){
+    window.addEventListener("load", function(){
+      navigator.serviceWorker.register("sw-ran.js").catch(function(){ /* sin permisos: sigue igual */ });
+    });
+  }
+})();
+</script>
+
+<datalist id="dl-clientes"></datalist>
+<datalist id="dl-fecha">
+  <option value="FINALIZADO"></option>
+  <option value="URGENCIA"></option>
+  <option value="POR DEFINIR"></option>
+</datalist>
+<datalist id="dl-flag">
+  <option value="EMERGENCIA"></option>
+  <option value="URGENTE"></option>
+  <option value="CRÍTICO"></option>
+  <option value="GARANTÍA"></option>
+</datalist>
+
+</body>
+</html>
