@@ -824,12 +824,12 @@
   .clave b{color:var(--petrol);}
 
   /* ================= IMPRESIÓN / PDF ================= */
-  @page{size:Letter portrait;margin:9mm 10mm 8mm;}
+  @page{size:Letter portrait;margin:5mm 10mm;}
   @media print{
     body{background:#fff;padding-top:0;font-size:9pt;}
     .bar,.hint,.aviso,.filtros,.toast,.modal,.tools,.rowadd,.addclient{display:none !important;}
     body.edit td.tools,body.edit th.tools{display:none !important;}
-    .sheet{max-width:none;margin:0;padding:0;box-shadow:none;background:#fff;}
+    .sheet{max-width:none;margin:0;padding:3mm 0 2mm;box-shadow:none;background:#fff;}
     .head{padding-bottom:7px;} h1{font-size:17pt;} .head-month{font-size:10.5pt;}
     .head-sub,.head-meta{font-size:7.6pt;} .eyebrow{font-size:6.6pt;}
     .kpis{margin-top:8px;gap:5px;} .kpi{padding:5px 8px;min-width:0;flex:1 1 0;}
@@ -1042,17 +1042,19 @@
 <div class="modal" id="modalPdf">
   <div class="caja">
     <h4>Generar el PDF limpio</h4>
-    <p class="sub">La fecha y la ruta <i>file:///C:/Users/…</i> las agrega el navegador solo cuando el destino es una
-      <b>impresora</b> o <b>Microsoft Print to PDF</b>. Con el destino <b>Guardar como PDF</b> no se agregan, y por eso
-      en las versiones nuevas de Chrome la casilla "Encabezados y pies de página" ni siquiera aparece.</p>
+    <p class="sub">La fecha y la ruta <i>file:///C:/Users/…</i> las agrega el navegador, no el reporte.
+      Este archivo usa márgenes de 5 mm justamente para que el navegador no tenga espacio donde dibujarlos,
+      así que deben salir solos. Si aún aparecen, el paso 3 los elimina definitivamente.</p>
     <ol class="pasos">
       <li>En <b>Destino</b> elige <b>Guardar como PDF</b>.
         <span class="nota">Si dice <i>Microsoft Print to PDF</i> o el nombre de una impresora, cámbialo: ese es el
         único caso en que salen la fecha y la ruta.</span></li>
-      <li>Deja <b>Tamaño de papel: Letter</b>, <b>Escala: 100</b> y <b>Márgenes: Predeterminado</b>.</li>
-      <li>En el grupo <b>Opciones</b>, activa <b>Gráficos del fondo</b> para conservar los colores.
-        <span class="nota">Si en ese grupo aparece <b>Encabezados y pies de página</b>, desmárcala.
-        Si no aparece, no hay nada que hacer: el archivo ya sale limpio.</span></li>
+      <li>Deja <b>Tamaño de papel: Letter</b> y <b>Escala: 100</b>.</li>
+      <li>En <b>Márgenes</b> elige <b>Predeterminado</b>. Si la fecha o la ruta igual aparecen en la vista previa,
+        cambia a <b>Ninguno</b>: sin margen, el navegador no puede dibujarlas y desaparecen.
+        <span class="nota">Si en el grupo <b>Opciones</b> aparece la casilla <b>Encabezados y pies de página</b>,
+        desmárcala: es la vía directa.</span></li>
+      <li>En <b>Opciones</b>, activa <b>Gráficos del fondo</b> para conservar los colores.</li>
       <li>Presiona <b>Guardar</b>.</li>
     </ol>
     <p class="sub" style="margin:10px 0 0">Evita el enlace <i>Imprimir usando el diálogo de sistema</i>: ese cuadro sí
