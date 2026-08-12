@@ -879,7 +879,11 @@
     tr td:first-child{box-shadow:none !important;}
     .kpi{min-width:44%;}
     .paneles{grid-template-columns:1fr;}
-  }
+  }/* === FIX: la línea "Original …" hereda nowrap del td y se desborda === */
+  tbody td.fecha{white-space:normal;}
+  tbody td.fecha .meta{white-space:normal;overflow-wrap:anywhere;}
+  tbody td.fecha span.fecha{white-space:nowrap;display:block;}
+  col.c-fecha{width:10.5%;} col.c-obs{width:16%;}
 </style>
 </head>
 <body class="">
